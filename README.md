@@ -12,3 +12,5 @@ This is a boilerplate for react native projects. It includes the following:
 
 follow the instructions on the react native website to setup your environment
 https://reactnative.dev/docs/environment-setup
+
+https://rnfirebase.io/
