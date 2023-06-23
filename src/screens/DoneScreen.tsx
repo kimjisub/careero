@@ -8,7 +8,7 @@ import Text from '@/components/design/Text';
 import TodoItem from '@/components/TodoItem';
 import { NavigationProp } from '@/navigations/StackNavigator';
 
-const TodosScreen = () => {
+const DoneScreen = () => {
   const navigation = useNavigation<NavigationProp<'MainTabs'>>();
 
   const { data: todoList } = useMyTodos();
@@ -24,27 +24,17 @@ const TodosScreen = () => {
 
   return (
     <Container>
-      {todoList?.map(todo => (
-        <TodoItem
-          key={todo.id}
-          myTodoNode={todo}
-          onPress={() => {
-            navigation.push('Todo', { id: todo.id });
-          }}
-        />
-      ))}
-
-      <Text>추천</Text>
-
-      {recommendTodoList?.map(todo => (
-        <TodoItem
-          key={todo.id}
-          myTodoNode={todo}
-          onPress={() => {
-            navigation.push('Todo', { id: todo.id });
-          }}
-        />
-      ))}
+      {todoList
+        ?.filter(todo => todo.status === 'done')
+        ?.map(todo => (
+          <TodoItem
+            key={todo.id}
+            myTodoNode={todo}
+            onPress={() => {
+              navigation.push('Todo', { id: todo.id });
+            }}
+          />
+        ))}
       <Text />
     </Container>
   );
@@ -55,4 +45,4 @@ const Container = styled(ScrollView)`
   padding-top: 16px;
 `;
 
-export default TodosScreen;
+export default DoneScreen;

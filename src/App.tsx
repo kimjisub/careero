@@ -6,6 +6,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RecoilRoot } from 'recoil';
 import { ThemeProvider } from 'styled-components';
 
+import './sheets';
+
 import Color, { DarkColor } from './design/Color';
 import useColor from './hooks/useColor';
 import NavigationContainer from './navigations/NavigationContainer';

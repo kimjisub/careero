@@ -32,7 +32,7 @@ export const useMyTodos = () => {
   });
 };
 
-export const useNextTodo = () => {
+export const useRecommendTodo = () => {
   return useQuery([QUERY_KEY_TODOS, 'recommended'], async () => {
     const todoStatus = todoStatusService.get();
 
@@ -41,19 +41,40 @@ export const useNextTodo = () => {
       status: todoStatus[todo.id] ?? null,
     }));
 
-    const doneTodos = todos.filter(todo => todoStatus[todo.id] === 'done');
+    const myTodos = todos.filter(todo => todo.status !== null);
 
     return (
       todos
         // check not in list
         .filter(todo => todo.status === null)
         // check is next of done
-        .filter(todo => {
-          const isNext = todo.prev.every(prev => {
-            return doneTodos.some(done => done.id === prev);
-          });
-          return isNext;
+        .map(todo => {
+          const recommendReasons = myTodos.reduce(
+            (acc: { reason: string; id: string }[], myTodo) => {
+              if (myTodo.prev.includes(todo.id)) {
+                acc.push({ reason: 'prev', id: myTodo.id });
+                console.log(myTodo.id, todo.id);
+              }
+              if (myTodo.related.includes(todo.id)) {
+                acc.push({ reason: 'related', id: myTodo.id });
+                console.log(myTodo.id, todo.id);
+              }
+              if (myTodo.status === 'done' && myTodo.next.includes(todo.id)) {
+                acc.push({ reason: 'next', id: myTodo.id });
+                console.log(myTodo.id, todo.id);
+              }
+
+              return acc;
+            },
+            [],
+          );
+
+          return {
+            ...todo,
+            recommendReasons,
+          };
         })
+        .filter(todo => todo.recommendReasons?.[0]) as MyTodoNode[]
     );
   });
 };

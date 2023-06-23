@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { ParamListBase, RouteProp } from '@react-navigation/native';
 
 import Icon from '@/components/design/Icon';
+import DoneScreen from '@/screens/DoneScreen';
 import ProfileScreen from '@/screens/ProfileScreen';
 import TodosScreen from '@/screens/TodosScreen';
 import icProfile from '@images/add.svg';
@@ -37,6 +38,7 @@ const MainTabNavigator = () => {
           tabBarInactiveTintColor: 'gray',
         })}>
         <Tab.Screen name="Todo" component={TodosScreen} />
+        <Tab.Screen name="나의 이력서" component={DoneScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
       </Tab.Navigator>
     </View>

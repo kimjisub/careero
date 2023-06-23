@@ -2,9 +2,9 @@ export type TodoNodeType =
   | 'skill'
   | 'competition'
   | 'job'
-  | 'scholarship'
   | 'certificate'
-  | 'class';
+  | 'class'
+  | 'grade';
 
 export interface TodoNode {
   id: string;
@@ -17,7 +17,13 @@ export interface TodoNode {
 }
 
 export type TodoStatus = 'todo' | 'doing' | 'done' | null;
+export type TodoRecommendReason = 'next' | 'prev' | 'related';
+export interface TodoRecommend {
+  reason: TodoRecommendReason;
+  id: string;
+}
 
 export interface MyTodoNode extends TodoNode {
   status: TodoStatus;
+  recommendReasons?: TodoRecommend[];
 }

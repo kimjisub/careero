@@ -32,12 +32,12 @@ const NavigationHeader = (props: NativeStackHeaderProps) => {
     <SafeAreaContainer insets={insets} style={[options.headerStyle]}>
       <Container>
         <LeftContainer>
-          {options.headerLeft?.({ canGoBack: false }) ||
-            (!isModal ? (
-              <TouchableOpacity onPress={goBack}>
-                <Icon source={icBack} />
-              </TouchableOpacity>
-            ) : null)}
+          {!isModal && (
+            <TouchableOpacity onPress={goBack}>
+              <Icon source={icBack} />
+            </TouchableOpacity>
+          )}
+          {options.headerLeft?.({ canGoBack: false })}
         </LeftContainer>
         <CenterContainer>
           <Text size="b3" weight="bd">
