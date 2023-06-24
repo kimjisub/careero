@@ -1,6 +1,6 @@
 
 # HUFSUMMER HACKATHON
-## 프로젝트명 : <img src="https://github.com/kimjisub/careero/assets/96881651/53a22da2-55ee-4f6f-94fc-2ac9e497b257" width="40">  CareeRo
+## 프로젝트명 : <img src="https://github.com/kimjisub/careero/assets/96881651/53a22da2-55ee-4f6f-94fc-2ac9e497b257" width="25">  CareeRo
 ## 팀명 : 국밥과 깍두기
 
 
@@ -33,27 +33,29 @@
   * 설문 참여자 중 다수가 대외 활동의 관한 정보를 진로 관련 플랫품으로 얻고 있다.
 
 2. 문제 해결 방법
-    * 위에서 정의한 문제를 해결하기 위한 서비스의 접근 방법 및 이에 대한 근거
+* 위에서 정의한 문제를 해결하기 위한 서비스의 접근 방법 및 이에 대한 근거
 
 3. 주요 기능
-    * 서비스의 핵심적인 기능 및 이를 이용한 사용자 경험에 대한 소개
+
+### Data_Graph
+![](https://github.com/kimjisub/careero/blob/main/docs/data_graph.gif)
+
+
 4. 사용 시나리오
-    * 실제 사용자가 서비스를 이용하는 상황에 대한 설명 및 예시
+* 실제 사용자가 서비스를 이용하는 상황에 대한 설명 및 예시
+
 5. 비지니스 모델
-    * 서비스의 수익 생성 방식 및 기업의 지속 가능성에 대한 설명
+* 서비스의 수익 생성 방식 및 기업의 지속 가능성에 대한 설명
 
 6. 마케팅 전략
+     
+<img width="525" alt="s5" src="https://github.com/kimjisub/careero/assets/96881651/42374bd6-95f1-4672-a9fa-189b530ab0ce">
    
-    * 서비스 홍보 및 이용자 확대를 위한 전략적 접근 방법에 대한 설명
+* 설문을 통해 진로 관련 플랫폼의 수요가 높다는 것을 알 수 있다.
+* 기존 플랫폼과 차별을 둔 서비스를 제공하여 경쟁력을 갖출 수 있다.
       
-   <img width="525" alt="s5" src="https://github.com/kimjisub/careero/assets/96881651/42374bd6-95f1-4672-a9fa-189b530ab0ce">
-   
 8. 발전 가능성
 
 
 
-
-
-### Data_Graph
-![](https://github.com/kimjisub/careero/blob/main/docs/data_graph.gif)
 
