@@ -1,4 +1,5 @@
 import React from 'react';
+import { LogBox } from 'react-native';
 import { SheetProvider } from 'react-native-actions-sheet';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
@@ -11,6 +12,8 @@ import './sheets';
 import Color, { DarkColor } from './design/Color';
 import useColor from './hooks/useColor';
 import NavigationContainer from './navigations/NavigationContainer';
+
+LogBox.ignoreAllLogs();
 
 const queryClient = new QueryClient();
 
