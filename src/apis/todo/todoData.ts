@@ -310,7 +310,7 @@ export const TodoData: { [key in string]: TodoNode } = {
     content:
       '<img width="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" /><br/>C는 저수준 프로그래밍 언어로, 시스템 프로그래밍이나 하드웨어와의 직접적인 상호작용에 주로 사용됩니다. C는 간단하면서도 효율적인 프로그래밍을 가능하게 합니다.',
     prev: [],
-    next: ['Cpp', 'GTK', 'OpenSSL', 'APR', 'iOS_developer'],
+    next: ['Cpp', 'GTK', 'OpenSSL', 'APR', 'ios'],
     related: [
       'computerProgramming',
       'computerProgrammingAndPractice',
@@ -482,7 +482,7 @@ export const TodoData: { [key in string]: TodoNode } = {
     content:
       'Swift는 애플의 프로그래밍 언어입니다. Swift는 iOS, macOS, watchOS, tvOS 등의 애플리케이션 개발에 사용됩니다.',
     prev: [],
-    next: ['ios', 'iOS_developer'],
+    next: ['ios'],
     related: [],
   },
   ios: {
@@ -491,8 +491,8 @@ export const TodoData: { [key in string]: TodoNode } = {
     title: 'ios',
     content:
       'ios는 애플의 모바일 운영체제입니다. ios는 Swift를 통해 애플리케이션을 개발할 수 있습니다.',
-    prev: ['Swift'],
-    next: [],
+    prev: ['Swift', 'C'],
+    next: ['iOS_developer'],
     related: [],
   },
   JavaFX: {
@@ -646,7 +646,8 @@ export const TodoData: { [key in string]: TodoNode } = {
     id: 'OOP',
     type: 'class',
     title: '객체지향프로그래밍',
-    content: '객체지향프로그래밍은 ~~',
+    content:
+      '객체지향프로그래밍 과목은 프로그래밍 패러다임 중 하나로, 현실 세계의 개념을 추상화하여 객체로 표현하고 상호작용시키는 방식을 학습하는 과목입니다. 학생들은 클래스, 객체, 상속, 다형성 등의 개념을 이해하고, 객체 지향적인 설계와 개발을 수행하여 유지보수가 용이하고 재사용 가능한 소프트웨어를 개발하는 능력을 키우게 됩니다. 이를 통해 소프트웨어의 확장성과 유연성을 높일 수 있습니다.',
     prev: [],
     next: ['DesignPattern', 'ProgrammingLanguage'],
     related: ['Cpp', 'Java', 'sophomore'],
@@ -697,7 +698,8 @@ export const TodoData: { [key in string]: TodoNode } = {
     id: 'DesignPattern',
     type: 'class',
     title: '디자인패턴',
-    content: '디자인패턴은 ~~',
+    content:
+      'DesignPattern 과목은 소프트웨어 디자인에서 자주 발생하는 문제들에 대한 해결 방법을 패턴화하여 학습하는 과목입니다. 학생들은 디자인 패턴의 원칙과 다양한 디자인 패턴들을 학습하고, 이를 실제 소프트웨어 설계에 적용하는 방법을 익힙니다. 이를 통해 유지보수 가능한, 확장성이 좋은, 재사용 가능한 소프트웨어를 개발하는 능력을 향상시킬 수 있습니다.',
     prev: ['OOP'],
     next: [],
     related: ['Java', 'python', 'junior'],
@@ -1089,7 +1091,7 @@ export const TodoData: { [key in string]: TodoNode } = {
     title: 'iOS개발자',
     content:
       '애플리케이션 개발: iOS 개발자는 Swift 또는 Objective-C를 사용하여 iOS 애플리케이션을 개발합니다. 이는 사용자가 iPhone, iPad 또는 iPod Touch와 같은 iOS 기기에서 실행할 수 있는 앱입니다. 애플리케이션의 기획서나 디자인을 바탕으로 코드를 작성하고, 화면 구성, 기능 구현, 데이터 처리 등을 담당합니다.<br>사용자 인터페이스(UI) 개발: iOS 개발자는 사용자가 직접 상호작용할 수 있는 앱의 UI를 개발합니다. UIKit 프레임워크를 사용하여 화면 구성, 버튼, 텍스트 필드, 테이블 뷰 등의 UI 요소를 디자인하고 구현합니다. 인터페이스 디자인 가이드라인을 준수하여 사용자 경험(UX)을 향상시킵니다.<br>데이터 관리: iOS 애플리케이션은 종종 데이터를 저장, 검색, 관리해야 합니다. iOS 개발자는 Core Data, Realm, SQLite 등의 데이터베이스 기술을 활용하여 데이터를 영구적으로 저장하고 관리합니다. 데이터의 로컬 캐싱, 네트워크 통신, 데이터 동기화 등을 다룹니다.<br>애플리케이션 테스팅: iOS 개발자는 자체적으로 단위 테스트 및 통합 테스트를 수행하여 애플리케이션의 안정성과 품질을 확보합니다. Xcode와 XCTest 프레임워크를 사용하여 테스트 케이스를 작성하고 실행하여 버그를 찾고 해결합니다.<br>앱 배포: iOS 개발자는 개발한 애플리케이션을 앱 스토어(App Store)에 배포하기 위한 작업을 수행합니다. 앱 스토어에 등록하고, 애플의 배포 가이드라인을 준수하여 앱 스토어에 애플리케이션을 제출합니다. 릴리스 관리와 업데이트도 iOS 개발자의 책임입니다.<br>성능 최적화: iOS 개발자는 애플리케이션의 성능을 개선하기 위해 최적화 작업을 수행합니다. 메모리 관리, 네트워크 효율성, 애니메이션 부드러움 등을 개선하여 사용자 경험을 향상시킵니다.<br>또한, iOS 개발자는 팀 내에서 다른 개발자, 디자이너, QA 엔지니어와 협업하여 프로젝트를 진행하고 문제를 해결합니다. 새로운 기술 및 도구에 대한 학습과 업무 경험을 통해 지속적인 성장과 개발자 커뮤니티와의 지식 공유도 중요한 업무입니다.',
-    prev: ['Swift', 'C'],
+    prev: ['ios'],
     next: [],
     related: [],
   },
@@ -1105,7 +1107,7 @@ export const TodoData: { [key in string]: TodoNode } = {
   },
   Web_developer_front: {
     id: 'Web_developer_front',
-    type: 'job',
+    type: ' job',
     title: '웹프론트엔드개발자',
     content:
       '웹 디자인 구현: 웹 프론트엔드 개발자는 웹 디자이너가 제공한 디자인 컨셉을 HTML, CSS, JavaScript를 사용하여 웹 페이지로 구현합니다. 웹 페이지의 레이아웃, 색상, 폰트, 이미지 등을 처리하여 사용자에게 시각적으로 매력적인 웹 인터페이스를 제공합니다<br>웹 기능 개발: 웹 프론트엔드 개발자는 JavaScript를 사용하여 웹 페이지의 동적인 기능을 개발합니다. 사용자의 상호작용에 따라 웹 페이지를 업데이트하거나 추가 기능을 제공하는데 필요한 코드를 작성합니다. 예를 들어, 사용자 입력 처리, 데이터 표시, 애니메이션, 이벤트 처리 등을 구현합니다.<br>웹 호환성 보장: 웹 프론트엔드 개발자는 다양한 웹 브라우저와 기기에서 웹 페이지가 일관되게 표시되도록 보장합니다. 크로스 브라우징 및 반응형 웹 디자인 기술을 사용하여 웹 페이지가 여러 환경에서 잘 작동하고 사용자 경험을 향상시킵니다.<br>웹 성능 최적화: 웹 프론트엔드 개발자는 웹 페이지의 성능을 향상시키기 위해 최적화 작업을 수행합니다. 파일 크기 최소화, 리소스 캐싱, 비동기 데이터 로딩 등을 통해 빠른 페이지 로딩 속도와 웹 애플리케이션의 효율성을 개선합니다.<br>웹 접근성 고려: 웹 프론트엔드 개발자는 웹 페이지를 접하는 모든 사용자들에게 접근성을 제공하기 위해 웹 접근성 가이드라인을 준수합니다. 웹 콘텐츠의 시각, 청각, 운동 등 다양한 장애를 가진 사용자들이 웹 페이지를 이용할 수 있도록 보장합니다.<br>협업과 커뮤니케이션: 웹 프론트엔드 개발자는 디자이너, 백엔드 개발자, 프로젝트 매니저 등과 협업하며 웹 프로젝트를 진행합니다. 요구 사항 이해, 기술적인 제약 사항 고려, 문제 해결을 위한 커뮤니케이션 등을 수행하여 효율적인 웹 프론트엔드 개발을 진행합니다.',
