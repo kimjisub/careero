@@ -20,9 +20,9 @@ const TodoBadge = ({ myTodoNode, me = false }: TodoViewProps) => {
     switch (myTodoNode.status) {
       case 'todo':
         return {
-          background: '#e2e2e2',
+          background: '#bec2c8',
           text: '#000',
-          borderColor: '#cccccc',
+          borderColor: '#0000',
           shadowColor: '#000',
         };
       case 'doing':
@@ -41,9 +41,9 @@ const TodoBadge = ({ myTodoNode, me = false }: TodoViewProps) => {
         };
       default:
         return {
-          background: '#bec2c8',
+          background: '#e2e2e2',
           text: '#000',
-          borderColor: '#0000',
+          borderColor: '#cccccc',
           shadowColor: '#000',
         };
     }
@@ -51,6 +51,7 @@ const TodoBadge = ({ myTodoNode, me = false }: TodoViewProps) => {
 
   return (
     <TouchableOpacity
+      disabled={me}
       onPress={() => {
         navigator.push('Todo', { id: myTodoNode.id });
       }}>
