@@ -3,7 +3,6 @@ import { TouchableOpacity, View, ViewProps } from 'react-native';
 import styled from 'styled-components';
 
 import { useTodos } from '@/apis/todo/todos';
-import { MyTodoNode } from '@/models/TodoNode';
 import icProgressBacklog from '@images/progress_backlog.svg';
 import icProgressDoing from '@images/progress_doing.svg';
 import icProgressDone from '@images/progress_done.svg';
@@ -14,18 +13,22 @@ import Gap from './design/Gap';
 import Icon from './design/Icon';
 import Text from './design/Text';
 import TodoBadge from './TodoBadge';
+import TypeBadge from './TypeBadge';
 
 export interface TodoViewProps extends ViewProps {
-  myTodoNode: MyTodoNode;
+  todoId?: string;
+  mode?: 'default' | 'done' | 'recommend' | 'roadmap' | 'job';
   onPress: () => void;
 }
 
-const TodoItem = ({ myTodoNode, onPress }: TodoViewProps) => {
+const TodoItem = ({ todoId, mode = 'default', onPress }: TodoViewProps) => {
   const { data: todos } = useTodos();
+
+  const myTodoNode = todos?.find(a => a.id === todoId);
   const renderReasons = useMemo(() => {
     return (
       <Gap gap={8} flexDirection="row">
-        {myTodoNode.recommendReasons?.map(reason => {
+        {myTodoNode?.recommendReasons?.map(reason => {
           const todo = todos?.find(a => a.id === reason.id);
           if (!todo) {
             return null;
@@ -34,10 +37,10 @@ const TodoItem = ({ myTodoNode, onPress }: TodoViewProps) => {
         })}
       </Gap>
     );
-  }, [myTodoNode.recommendReasons, todos]);
+  }, [myTodoNode?.recommendReasons, todos]);
 
   const renderStatusIcon = useMemo(() => {
-    switch (myTodoNode.status) {
+    switch (myTodoNode?.status) {
       case 'todo':
         return icProgressTodo;
       case 'doing':
@@ -47,27 +50,50 @@ const TodoItem = ({ myTodoNode, onPress }: TodoViewProps) => {
       default:
         return icProgressBacklog;
     }
-  }, [myTodoNode.status]);
+  }, [myTodoNode?.status]);
+
+  if (!myTodoNode) {
+    return null;
+  }
 
   return (
     <TouchableOpacity onPress={onPress}>
-      <Container>
-        <View
+      <Container
+        style={{
+          backgroundColor: mode === 'roadmap' ? '#0000' : '#fff',
+        }}>
+        <Gap
+          gap={8}
+          flexDirection="row"
           style={{
-            flexDirection: 'row',
             alignItems: 'center',
+            justifyContent: 'space-between',
           }}>
-          <Icon source={renderStatusIcon} size={16} />
-
-          <Text
-            size="b3"
+          <Gap
+            gap={8}
+            flexDirection="row"
             style={{
-              marginLeft: 8,
+              alignItems: 'center',
+              flex: 1,
             }}>
-            {myTodoNode.title}
+            {mode === 'default' && <Icon source={renderStatusIcon} size={16} />}
+
+            <Text size="b3" ellipsizeMode="tail" numberOfLines={1}>
+              {myTodoNode.title}
+            </Text>
+          </Gap>
+          {mode !== 'roadmap' && mode !== 'job' && (
+            <TypeBadge type={myTodoNode.type} />
+          )}
+        </Gap>
+        {mode === 'recommend' && (
+          <View style={{ flexDirection: 'column' }}>{renderReasons}</View>
+        )}
+        {mode === 'done' && (
+          <Text size="b5" style={{ marginTop: 4 }}>
+            {myTodoNode.comment}
           </Text>
-        </View>
-        <View style={{ flexDirection: 'column' }}>{renderReasons}</View>
+        )}
       </Container>
     </TouchableOpacity>
   );

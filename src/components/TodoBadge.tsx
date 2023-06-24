@@ -68,7 +68,11 @@ const TodoBadge = ({ myTodoNode, me = false }: TodoViewProps) => {
           shadowRadius: 8,
           elevation: me ? 4 : 0,
         }}>
-        <Text size="b5" color={statusColorSet.text}>
+        <Text
+          size="b5"
+          color={statusColorSet.text}
+          ellipsizeMode="tail"
+          numberOfLines={1}>
           {myTodoNode.title}
         </Text>
       </Container>
@@ -80,9 +84,9 @@ const Container = styled(View)`
   padding: 8px 12px;
   align-items: center;
   margin-bottom: 0;
-  margin-vertical: 4px;
+  margin-vertical: 8px;
   border-radius: 32px;
-  max-width: 100px;
+  max-width: 130px;
 `;
 
 export default TodoBadge;

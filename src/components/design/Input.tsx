@@ -12,7 +12,7 @@ import styled from 'styled-components';
 
 import useColor from '@/hooks/useColor';
 import icEye from '@images/eye.svg';
-import icVisibilityOff from '@images/visibility_off.svg';
+import icVisibilityOff from '@images/eye_off.svg';
 
 import Icon from './Icon';
 import Row from './Row';

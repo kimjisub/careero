@@ -15,10 +15,6 @@ const GraphConnection = ({
   width,
 }: GraphConnectionProps) => {
   const maxIndex = Math.max(...connections.flat(), 0);
-  console.log('connections', connections);
-  console.log('maxIndex', maxIndex);
-  console.log('height', (maxIndex + 1) * itemHeight);
-  console.log('width', width);
 
   return (
     <Container
@@ -34,12 +30,11 @@ const GraphConnection = ({
             const d = `M0 ${startY} C${width / 2} ${startY} ${
               width / 2
             } ${endY} ${width} ${endY}`;
-            console.log('d', d);
             return (
               <Path
                 key={index}
                 d={d}
-                stroke="black"
+                stroke="#888"
                 strokeWidth="2"
                 fill="none"
               />

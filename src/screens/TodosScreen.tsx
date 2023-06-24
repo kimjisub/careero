@@ -14,35 +14,47 @@ const TodosScreen = () => {
   const { data: todoList } = useMyTodos();
   const { data: recommendTodoList } = useRecommendTodo();
 
-  console.log(
-    'recommendTodoList',
-    recommendTodoList?.map(todo => ({
-      title: todo.title,
-      recommendReasons: todo.recommendReasons,
-    })),
-  );
-
   return (
     <Container>
-      {todoList?.map(todo => (
-        <TodoItem
-          key={todo.id}
-          myTodoNode={todo}
-          onPress={() => {
-            navigation.push('Todo', { id: todo.id });
-          }}
-        />
-      ))}
+      {todoList
+        ?.filter(todo => todo.status !== 'done')
+        ?.sort((a, b) => {
+          if (a.status === 'doing' && b.status === 'todo') {
+            return -1;
+          }
+          if (a.status === 'todo' && b.status === 'doing') {
+            return 1;
+          }
+          return 0;
+        })
+        ?.map(todo => (
+          <TodoItem
+            key={todo.id}
+            todoId={todo.id}
+            onPress={() => {
+              navigation.push('Todo', { id: todo.id });
+            }}
+          />
+        ))}
 
-      <Text>추천</Text>
+      <Text
+        size="b2"
+        style={{
+          marginTop: 16,
+          marginBottom: 8,
+          marginLeft: 16,
+        }}>
+        추천
+      </Text>
 
       {recommendTodoList?.map(todo => (
         <TodoItem
           key={todo.id}
-          myTodoNode={todo}
+          todoId={todo.id}
           onPress={() => {
             navigation.push('Todo', { id: todo.id });
           }}
+          mode="recommend"
         />
       ))}
       <Text />

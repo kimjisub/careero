@@ -2,18 +2,27 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import { QUERY_KEY_TODOS } from '@/constants/QueryKey';
 import { MyTodoNode, TodoStatus } from '@/models/TodoNode';
+import { doneCommentService } from '@/services/doneComment';
 import { todoStatusService } from '@/services/todoStatus';
 
 import { TodoData } from './todoData';
 
+const getTodos = () => {
+  const todoStatus = todoStatusService.get();
+  const todoComment = doneCommentService.get();
+
+  const todos: MyTodoNode[] = Object.values(TodoData).map(todo => ({
+    ...todo,
+    status: todoStatus[todo.id] ?? null,
+    comment: todoComment[todo.id] ?? null,
+  }));
+
+  return todos;
+};
+
 export const useTodos = () => {
   return useQuery([QUERY_KEY_TODOS], async () => {
-    const todoStatus = todoStatusService.get();
-
-    const todos: MyTodoNode[] = Object.values(TodoData).map(todo => ({
-      ...todo,
-      status: todoStatus[todo.id] ?? null,
-    }));
+    const todos = getTodos();
 
     return todos;
   });
@@ -21,12 +30,7 @@ export const useTodos = () => {
 
 export const useMyTodos = () => {
   return useQuery([QUERY_KEY_TODOS, 'my'], async () => {
-    const todoStatus = todoStatusService.get();
-
-    const todos: MyTodoNode[] = Object.values(TodoData).map(todo => ({
-      ...todo,
-      status: todoStatus[todo.id] ?? null,
-    }));
+    const todos = getTodos();
 
     return todos.filter(todo => todo.status !== null);
   });
@@ -34,12 +38,7 @@ export const useMyTodos = () => {
 
 export const useRecommendTodo = () => {
   return useQuery([QUERY_KEY_TODOS, 'recommended'], async () => {
-    const todoStatus = todoStatusService.get();
-
-    const todos: MyTodoNode[] = Object.values(TodoData).map(todo => ({
-      ...todo,
-      status: todoStatus[todo.id] ?? null,
-    }));
+    const todos = getTodos();
 
     const myTodos = todos.filter(todo => todo.status !== null);
 
@@ -53,15 +52,12 @@ export const useRecommendTodo = () => {
             (acc: { reason: string; id: string }[], myTodo) => {
               if (myTodo.prev.includes(todo.id)) {
                 acc.push({ reason: 'prev', id: myTodo.id });
-                console.log(myTodo.id, todo.id);
               }
               if (myTodo.related.includes(todo.id)) {
                 acc.push({ reason: 'related', id: myTodo.id });
-                console.log(myTodo.id, todo.id);
               }
               if (myTodo.status === 'done' && myTodo.next.includes(todo.id)) {
                 acc.push({ reason: 'next', id: myTodo.id });
-                console.log(myTodo.id, todo.id);
               }
 
               return acc;

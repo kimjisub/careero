@@ -26,4 +26,5 @@ export interface TodoRecommend {
 export interface MyTodoNode extends TodoNode {
   status: TodoStatus;
   recommendReasons?: TodoRecommend[];
+  comment?: string;
 }

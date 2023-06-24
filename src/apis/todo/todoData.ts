@@ -8,56 +8,79 @@ export const TodoData: { [key in string]: TodoNode } = {
     content:
       '<img width="20px" src="https://i.imgur.com/dstWtH7.png" /><br>HTML은 웹 페이지를 구성하는 데 사용되는 마크업 언어입니다. 웹 페이지의 구조, 내용, 그리고 표현 방식을 정의하기 위해 사용됩니다. HTML은 웹 개발의 기초 요소로서, 웹 브라우저가 이해하고 해석하여 사용자에게 내용을 제공합니다.',
     prev: [],
-    next: ['javascript'],
-    related: ['css'],
+    next: ['javascript', 'typescript', 'Web_developer_front'],
+    related: ['css', 'WebProgramming'],
   },
   css: {
     id: 'css',
     type: 'skill',
     title: 'css',
     content:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" /><br>CSS는 Cascading Style Sheets의 약자로, HTML이나 XML과 같은 마크업 언어로 작성된 문서의 스타일과 레이아웃을 정의하기 위해 사용되는 스타일 시트 언어입니다. CSS는 웹 페이지의 디자인, 색상, 레이아웃, 폰트 등의 시각적인 요소를 지정하여 웹 페이지를 보다 예쁘고 일관성 있게 표현할 수 있습니다. CSS는 HTML과 함께 사용되어 웹 개발자들이 웹 페이지의 스타일을 쉽게 관리하고 수정할 수 있게 해줍니다.',
+      '<img width="20px" src="https://i.imgur.com/UiIKOOe.png" /><br>CSS는 Cascading Style Sheets의 약자로, HTML이나 XML과 같은 마크업 언어로 작성된 문서의 스타일과 레이아웃을 정의하기 위해 사용되는 스타일 시트 언어입니다. CSS는 웹 페이지의 디자인, 색상, 레이아웃, 폰트 등의 시각적인 요소를 지정하여 웹 페이지를 보다 예쁘고 일관성 있게 표현할 수 있습니다. CSS는 HTML과 함께 사용되어 웹 개발자들이 웹 페이지의 스타일을 쉽게 관리하고 수정할 수 있게 해줍니다.',
     prev: [],
-    next: ['javascript'],
-    related: ['html'],
+    next: ['javascript', 'typescript', 'Web_developer_front'],
+    related: ['html', 'WebProgramming'],
   },
   javascript: {
     id: 'javascript',
     type: 'skill',
     title: 'javascript',
     content:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /><br>JavaScript(JS)는 웹 페이지를 동적으로 만들기 위해 사용되는 프로그래밍 언어입니다. HTML과 CSS와 함께 사용되며, 웹 브라우저에서 클라이언트 측 스크립팅 언어로 실행됩니다. JavaScript를 사용하면 사용자와 상호작용하고, 이벤트에 응답하며, 웹 페이지의 내용을 동적으로 변경하고 조작할 수 있습니다. JS는 다양한 기능과 라이브러리를 제공하여 웹 애플리케이션의 개발과 사용자 경험을 향상시킬 수 있습니다.',
+      '<img width="20px" src="https://i.imgur.com/Xkahv9P.png" /><br>javascript(JS)는 웹 페이지를 동적으로 만들기 위해 사용되는 프로그래밍 언어입니다. HTML과 CSS와 함께 사용되며, 웹 브라우저에서 클라이언트 측 스크립팅 언어로 실행됩니다. javascript를 사용하면 사용자와 상호작용하고, 이벤트에 응답하며, 웹 페이지의 내용을 동적으로 변경하고 조작할 수 있습니다. JS는 다양한 기능과 라이브러리를 제공하여 웹 애플리케이션의 개발과 사용자 경험을 향상시킬 수 있습니다.',
     prev: ['html', 'css'],
-    next: ['typescript'],
-    related: [],
+    next: ['react', 'vue', 'redux', 'Web_developer_front', 'Game_developer'],
+    related: [
+      'WebProgramming',
+      'ProgrammingLanguage',
+      'typescript',
+      'Modoo_developer_fifth',
+      'Seoul_IT_Innovationsquare',
+      'OpenSW_developer_competition',
+      'Naver_Boost_Camp',
+      'Naver_Boost_Camp_Ai',
+      'ROS_Education_AI',
+      'DevOps_Developer_Education',
+      'MetaVerse_developer_competition',
+    ],
   },
   typescript: {
     id: 'typescript',
     type: 'skill',
     title: 'typescript',
     content:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /><br>TypeScript (TS)는 Microsoft에서 개발한 정적 타입을 지원하는 JavaScript의 상위 집합 언어입니다. TS는 JavaScript의 모든 기능을 포함하면서도 추가적인 정적 타입 체크와 객체 지향 프로그래밍 기능을 제공합니다. TS는 개발자가 코드를 더 안정적으로 작성하고 유지할 수 있도록 도와주며, 대규모 프로젝트에서 효율적인 협업과 유지 보수를 가능하게 합니다.',
-    prev: ['javascript'],
-    next: ['react', 'vue'],
-    related: [],
+      '<img width="20px" src="https://i.imgur.com/dLrQmTl.png" /><br>TypeScript (TS)는 Microsoft에서 개발한 정적 타입을 지원하는 javascript의 상위 집합 언어입니다. TS는 javascript의 모든 기능을 포함하면서도 추가적인 정적 타입 체크와 객체 지향 프로그래밍 기능을 제공합니다. TS는 개발자가 코드를 더 안정적으로 작성하고 유지할 수 있도록 도와주며, 대규모 프로젝트에서 효율적인 협업과 유지 보수를 가능하게 합니다.',
+    prev: ['html', 'css'],
+    next: ['react', 'vue', 'redux'],
+    related: ['WebProgramming', 'ProgrammingLanguage', 'javascript'],
   },
   react: {
     id: 'react',
     type: 'skill',
     title: 'react',
     content:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" /><br/>React는 Facebook에서 개발된 사용자 인터페이스(UI) 라이브러리로, 웹 및 모바일 애플리케이션 개발에 사용됩니다. React는 컴포넌트 기반 아키텍처를 사용하여 재사용 가능하고 모듈화된 UI 요소를 만들고 관리할 수 있습니다. Virtual DOM을 활용하여 성능을 최적화하며, 단방향 데이터 흐름을 통해 애플리케이션 상태 관리를 용이하게 합니다. React는 커뮤니티의 활발한 생태계와 다양한 지원 도구를 통해 개발자들에게 많은 혜택을 제공합니다.',
-    prev: ['typescript'],
+      '<img width="20px" src="https://i.imgur.com/DWhgZFS.png" /><br/>React는 Facebook에서 개발된 사용자 인터페이스(UI) 라이브러리로, 웹 및 모바일 애플리케이션 개발에 사용됩니다. React는 컴포넌트 기반 아키텍처를 사용하여 재사용 가능하고 모듈화된 UI 요소를 만들고 관리할 수 있습니다. Virtual DOM을 활용하여 성능을 최적화하며, 단방향 데이터 흐름을 통해 애플리케이션 상태 관리를 용이하게 합니다. React는 커뮤니티의 활발한 생태계와 다양한 지원 도구를 통해 개발자들에게 많은 혜택을 제공합니다.',
+    prev: ['typescript', 'javascript'],
     next: ['redux'],
-    related: ['vue'],
+    related: [
+      'vue',
+      'WebProgramming',
+      'Modoo_developer_fifth',
+      'Seoul_IT_Innovationsquare',
+      'OpenSW_developer_competition',
+      'Naver_Boost_Camp',
+      'Naver_Boost_Camp_Ai',
+      'ROS_Education_AI',
+      'DevOps_Developer_Education',
+      'MetaVerse_developer_competition',
+    ],
   },
   vue: {
     id: 'vue',
     type: 'skill',
     title: 'vue',
     content:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" /><br>Vue.js는 사용자 인터페이스(UI)를 개발하기 위한 점진적인 자바스크립트 프레임워크입니다. 리액트(React)와 앵귤러(Angular)의 중간 지점에 위치하며, 가볍고 유연한 성격을 가지고 있습니다. Vue.js는 단일 파일 컴포넌트 구조와 양방향 데이터 바인딩을 강조하여 개발자들이 손쉽게 UI를 구성하고 상태를 관리할 수 있도록 도와줍니다.',
-    prev: ['typescript'],
+      '<img width="20px" src="https://i.imgur.com/cHxJK4e.png" /><br>Vue.js는 사용자 인터페이스(UI)를 개발하기 위한 점진적인 자바스크립트 프레임워크입니다. 리액트(React)와 앵귤러(Angular)의 중간 지점에 위치하며, 가볍고 유연한 성격을 가지고 있습니다. Vue.js는 단일 파일 컴포넌트 구조와 양방향 데이터 바인딩을 강조하여 개발자들이 손쉽게 UI를 구성하고 상태를 관리할 수 있도록 도와줍니다.',
+    prev: ['typescript', 'javascript'],
     next: [],
     related: ['react'],
   },
@@ -66,8 +89,8 @@ export const TodoData: { [key in string]: TodoNode } = {
     type: 'skill',
     title: 'redux',
     content:
-      'Redux는 JavaScript 애플리케이션의 상태 관리를 위한 예측 가능한 상태 컨테이너입니다. 애플리케이션의 모든 상태가 단일 저장소에 저장되며, 상태의 변경은 순수 함수인 리듀서를 통해 관리됩니다. Redux는 Flux 아키텍처를 기반으로 하며, 애플리케이션의 복잡한 상태를 효율적으로 관리하고 상태 변화를 추적하기 위해 사용됩니다. Redux는 React뿐만 아니라 Angular, Vue와 같은 다양한 프론트엔드 프레임워크와 함께 사용할 수 있습니다.',
-    prev: ['react'],
+      'Redux는 javascript 애플리케이션의 상태 관리를 위한 예측 가능한 상태 컨테이너입니다. 애플리케이션의 모든 상태가 단일 저장소에 저장되며, 상태의 변경은 순수 함수인 리듀서를 통해 관리됩니다. Redux는 Flux 아키텍처를 기반으로 하며, 애플리케이션의 복잡한 상태를 효율적으로 관리하고 상태 변화를 추적하기 위해 사용됩니다. Redux는 React뿐만 아니라 Angular, Vue와 같은 다양한 프론트엔드 프레임워크와 함께 사용할 수 있습니다.',
+    prev: ['react', 'typescript', 'javascript'],
     next: [],
     related: [],
   },
@@ -91,10 +114,13 @@ export const TodoData: { [key in string]: TodoNode } = {
       'Tkinter',
       'PyQt',
       'Kivy',
+      'Web_developer_back',
+      'Data_Scientist',
+      'Game_developer',
     ],
     related: [
       'computerThinking',
-      'dataStrucutre',
+      'dataStructure',
       'algorithm',
       'probabilityStatistics',
       'machineLearning',
@@ -103,6 +129,14 @@ export const TodoData: { [key in string]: TodoNode } = {
       'programmers',
       'codeTree',
       'codeUp',
+      'ProgrammingLanguage',
+      'DesignPattern',
+      'OpenSW_developer_competition',
+      'Naver_Boost_Camp',
+      'Naver_Boost_Camp_Ai',
+      'ROS_Education_AI',
+      'DevOps_Developer_Education',
+      'MetaVerse_developer_competition',
     ],
   },
   numpy: {
@@ -163,13 +197,14 @@ export const TodoData: { [key in string]: TodoNode } = {
       'TensorFlow는 구글에서 개발한 딥러닝 및 기계 학습을 위한 오픈 소스 라이브러리로, 다양한 인공신경망 모델을 구축하고 훈련시키는 데 사용됩니다. TensorFlow는 유연한 그래프 기반 계산 모델을 제공하며, CPU 및 GPU를 활용하여 대규모 데이터셋에서 고성능 계산을 수행할 수 있습니다. 또한 TensorFlow는 자동 미분, 모델 배포, 모바일 및 임베디드 장치 지원 등 다양한 기능을 제공하여 딥러닝 응용 프로그램의 개발과 배포를 용이하게 합니다.',
     prev: ['python'],
     next: [],
-    related: ['machineLearning', 'deepLearning', 'computerVision'],
+    related: ['machineLearning', 'deepLearning', 'computerVision', 'NLP'],
   },
   PyTorch: {
     id: 'PyTorch',
     type: 'skill',
     title: 'PyTorch',
-    content: '파이토치는 ~~',
+    content:
+      'PyTorch는 파이썬 기반의 오픈 소스 딥 러닝 프레임워크로, 텐서 연산과 그래프 기반의 계산을 지원합니다. 강력한 GPU 가속을 통해 빠른 모델 학습과 추론이 가능하며, 다양한 신경망 구조를 쉽게 구성하고 최적화할 수 있습니다. 유연하고 직관적인 API를 제공하여 딥 러닝 모델 개발을 용이하게 합니다.',
     prev: ['python'],
     next: [],
     related: [],
@@ -178,7 +213,8 @@ export const TodoData: { [key in string]: TodoNode } = {
     id: 'Django',
     type: 'skill',
     title: 'Django',
-    content: '장고는 ~~',
+    content:
+      'Django는 파이썬 기반의 웹 애플리케이션 프레임워크로, 웹 개발을 빠르고 효율적으로 할 수 있게 도와줍니다. 강력한 모델-뷰-템플릿 (Model-View-Template) 아키텍처를 따르며, 데이터베이스와의 상호작용, URL 라우팅, 세션 관리 등의 기능을 내장하고 있습니다. 안정성, 확장성, 보안성을 고려하여 신뢰할 수 있는 웹 애플리케이션을 구축할 수 있습니다.',
     prev: ['python'],
     next: [],
     related: [],
@@ -187,7 +223,8 @@ export const TodoData: { [key in string]: TodoNode } = {
     id: 'Flask',
     type: 'skill',
     title: 'Flask',
-    content: '플라스크는 ~~',
+    content:
+      'Flask는 파이썬 기반의 마이크로 웹 프레임워크로, 간결하고 가벼운 구조로 웹 애플리케이션을 개발할 수 있게 해줍니다. 확장성이 높아 필요한 기능들을 선택적으로 추가할 수 있으며, URL 라우팅, 템플릿 엔진, 세션 관리 등의 기능을 제공합니다. 개발자 친화적인 인터페이스와 유연한 구성을 통해 빠르고 효율적인 웹 개발을 가능하게 합니다.',
     prev: ['python'],
     next: [],
     related: [],
@@ -196,7 +233,8 @@ export const TodoData: { [key in string]: TodoNode } = {
     id: 'Tkinter',
     type: 'skill',
     title: 'Tkinter',
-    content: '티킨터는 ~~',
+    content:
+      'Tkinter는 파이썬의 기본적인 GUI (그래픽 사용자 인터페이스) 패키지로, 간단하고 사용하기 쉬운 방식으로 GUI 애플리케이션을 개발할 수 있습니다. Tkinter는 Tk GUI 툴킷을 파이썬으로 감싼 것으로, 다양한 위젯과 레이아웃 관리 기능을 제공합니다. 크로스 플랫폼 호환성을 가지며, 많은 파이썬 개발자들에게 널리 사용되고 있습니다.',
     prev: ['python'],
     next: [],
     related: [],
@@ -205,7 +243,8 @@ export const TodoData: { [key in string]: TodoNode } = {
     id: 'PyQt',
     type: 'skill',
     title: 'PyQt',
-    content: '파이큐티는 ~~',
+    content:
+      '파이큐티는PyQt는 파이썬으로 작성된 크로스 플랫폼 GUI 프레임워크로, Qt 라이브러리를 파이썬에서 사용할 수 있게 해줍니다. PyQt는 다양한 위젯, 레이아웃 관리 및 이벤트 처리 기능을 제공하며, 풍부한 GUI 애플리케이션을 개발할 수 있습니다. PyQt는 오픈 소스이며, 상업적 사용도 가능합니다.',
     prev: ['python'],
     next: [],
     related: [],
@@ -214,16 +253,18 @@ export const TodoData: { [key in string]: TodoNode } = {
     id: 'Kivy',
     type: 'skill',
     title: 'Kivy',
-    content: '키비는 ~~',
+    content:
+      'Kivy는 파이썬으로 작성된 오픈 소스 크로스 플랫폼 GUI 프레임워크로, 멀티터치와 다중 입력을 지원합니다. 주로 모바일 및 태블릿 애플리케이션 개발에 사용되며, 사용자 인터페이스를 위한 선언적 언어와 Python 코드를 조합하여 개발할 수 있습니다. Kivy는 확장성과 사용자 정의 가능성이 높아 다양한 애플리케이션을 구축할 수 있습니다.',
     prev: ['python'],
     next: [],
     related: [],
   },
-  FreshMan: {
-    id: 'FreshMan',
+  freshMan: {
+    id: 'freshMan',
     type: 'grade',
     title: '1학년',
-    content: '1학년 과목들입니다.',
+    content:
+      '<img width ="10px" src="https://i.imgur.com/AYgromV.png " > <br> 풋풋한 새내기! 아직은 무엇을 해야할지 모르겠죠? 이제부터 시작해봅시다!',
     prev: [],
     next: ['sophomore'],
     related: [
@@ -232,24 +273,25 @@ export const TodoData: { [key in string]: TodoNode } = {
       'computerThinking',
     ],
   },
-
   computerThinking: {
     id: 'computerThinking',
     type: 'class',
-    title: '컴퓨터사고',
-    content: '컴퓨터사고는 ~~',
-    prev: ['FreshMan'],
+    title: '컴퓨팅사고',
+    content:
+      '컴퓨팅사고는 소프트웨어 교양으로 Python 에 관련된 기초적인 내용을 다룹니다. 반복문,조건문,배열 등을 다루면서 소프트웨어 기초교양을 배웁니다. 해당 과목을 통해 프로그래밍에 대한 기본적인 이해를 할 수 있습니다.',
+    prev: [],
     next: [],
-    related: ['python'],
+    related: ['python', 'freshMan'],
   },
   computerProgramming: {
     id: 'computerProgramming',
     type: 'class',
     title: '컴퓨터프로그래밍',
-    content: '컴퓨터프로그래밍은 ~~',
-    prev: ['FreshMan'],
+    content:
+      '컴퓨터프로그래밍 과목은 컴퓨터 언어와 개발 도구를 사용하여 문제를 해결하는 프로그래밍 기술을 학습하는 과목입니다. 학생들은 알고리즘과 데이터 구조를 이해하고, 프로그램을 작성하고 디버그하는 능력을 키우며, 소프트웨어 개발의 기초를 배웁니다. 이를 통해 창의적인 문제 해결과 컴퓨터 애플리케이션 개발에 필요한 기술을 습득할 수 있습니다.',
+    prev: [],
     next: ['computerProgrammingAndPractice'],
-    related: ['C'],
+    related: ['C', 'freshMan'],
   },
   computerProgrammingAndPractice: {
     id: 'computerProgrammingAndPractice',
@@ -257,28 +299,40 @@ export const TodoData: { [key in string]: TodoNode } = {
     title: '컴퓨터프로그래밍실습',
     content:
       '컴퓨터 프로그래밍 실습은 이론적인 개념을 실제로 적용하여 프로그래밍 기술을 연마하는 과목입니다. 이 과목에서는 프로그래밍 언어를 사용하여 실제 문제를 해결하고, 알고리즘을 구현하며, 프로그램 디버깅 및 테스트 등을 경험합니다. 컴퓨터 프로그래밍 실습은 학습한 이론을 실제로 적용하고 개발 능력을 향상시키기 위한 중요한 활동으로, 실제 프로그래밍 프로젝트나 예제를 통해 실전 개발 환경에 대한 경험을 쌓을 수 있습니다.',
-    prev: ['FreshMan', 'computerProgramming'],
-    next: ['dataStrucutre'],
-    related: ['Cpp', 'C'],
+    prev: ['computerProgramming'],
+    next: ['dataStructure'],
+    related: ['Cpp', 'C', 'freshMan'],
   },
   C: {
     id: 'C',
     type: 'skill',
     title: 'C',
     content:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" /><br/>C는 저수준 프로그래밍 언어로, 시스템 프로그래밍이나 하드웨어와의 직접적인 상호작용에 주로 사용됩니다. C는 간단하면서도 효율적인 프로그래밍을 가능하게 합니다.',
+      '<img width="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" /><br/>C는 저수준 프로그래밍 언어로, 시스템 프로그래밍이나 하드웨어와의 직접적인 상호작용에 주로 사용됩니다. C는 간단하면서도 효율적인 프로그래밍을 가능하게 합니다.',
     prev: [],
-    next: ['Cpp', 'GTK', 'OpenSSL', 'APR'],
+    next: ['Cpp', 'GTK', 'OpenSSL', 'APR', 'iOS_developer'],
     related: [
       'computerProgramming',
       'computerProgrammingAndPractice',
-      'dataStrucutre',
+      'dataStructure',
       'algorithm',
       'beakJoon',
       'codeForce',
       'programmers',
       'codeTree',
       'codeUp',
+      'ProgrammingLanguage',
+      'computerArchitecture',
+      'systemProgramming',
+      'assembly',
+      'Modoo_developer_fifth',
+      'Seoul_IT_Innovationsquare',
+      'OpenSW_developer_competition',
+      'Naver_Boost_Camp',
+      'Naver_Boost_Camp_Ai',
+      'ROS_Education_AI',
+      'DevOps_Developer_Education',
+      'MetaVerse_developer_competition',
     ],
   },
   GTK: {
@@ -311,18 +365,17 @@ export const TodoData: { [key in string]: TodoNode } = {
     next: [],
     related: [],
   },
-
   Cpp: {
     id: 'Cpp',
     type: 'skill',
     title: 'Cpp',
     content:
-      '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" /><br /> C++은 객체지향 프로그래밍을 지원하는 일반적인 목적의 프로그래밍 언어입니다. C++은 C에 대한 확장으로, C와의 호환성을 가지면서도 추가적인 기능을 제공합니다.',
+      '<img width="20px" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" /><br /> C++은 객체지향 프로그래밍을 지원하는 일반적인 목적의 프로그래밍 언어입니다. C++은 C에 대한 확장으로, C와의 호환성을 가지면서도 추가적인 기능을 제공합니다.',
     prev: ['C'],
-    next: ['Qt', 'Boost'],
+    next: ['Qt', 'Boost', 'Game_developer'],
     related: [
       'computerProgrammingAndPractice',
-      'dataStrucutre',
+      'dataStructure',
       'OOP',
       'algorithm',
       'beakJoon',
@@ -330,6 +383,15 @@ export const TodoData: { [key in string]: TodoNode } = {
       'programmers',
       'codeTree',
       'codeUp',
+      'ProgrammingLanguage',
+      'Modoo_developer_fifth',
+      'Seoul_IT_Innovationsquare',
+      'OpenSW_developer_competition',
+      'Naver_Boost_Camp',
+      'Naver_Boost_Camp_Ai',
+      'ROS_Education_AI',
+      'DevOps_Developer_Education',
+      'MetaVerse_developer_competition',
     ],
   },
   Qt: {
@@ -352,7 +414,6 @@ export const TodoData: { [key in string]: TodoNode } = {
     next: [],
     related: [],
   },
-
   Java: {
     id: 'Java',
     type: 'skill',
@@ -360,7 +421,18 @@ export const TodoData: { [key in string]: TodoNode } = {
     content:
       'Java는 객체지향 프로그래밍 언어로, 다양한 플랫폼에서 동작하는 애플리케이션 개발에 주로 사용됩니다. Java는 가상 머신을 통해 플랫폼 독립성을 제공합니다.',
     prev: [],
-    next: ['JavaFX', 'JUnit', 'Spring', 'JSP', 'Hibernate', 'JPA'],
+    next: [
+      'JavaFX',
+      'JUnit',
+      'Spring',
+      'JSP',
+      'Hibernate',
+      'JPA',
+      'Android_developer',
+      'Web_developer_back',
+      'Data_Scientist',
+      'Game_developer',
+    ],
     related: [
       'OOP',
       'DesignPattern',
@@ -370,7 +442,58 @@ export const TodoData: { [key in string]: TodoNode } = {
       'programmers',
       'codeTree',
       'codeUp',
+      'ProgrammingLanguage',
+      'JAVA_backend_boot_camp',
+      'Modoo_developer_fifth',
+      'Seoul_IT_Innovationsquare',
+      'OpenSW_developer_competition',
+      'Naver_Boost_Camp',
+      'Naver_Boost_Camp_Ai',
+      'ROS_Education_AI',
+      'DevOps_Developer_Education',
+      'MetaVerse_developer_competition',
+      'Kotlin',
     ],
+  },
+  Kotlin: {
+    id: 'Kotlin',
+    type: 'skill',
+    title: 'Kotlin',
+    content:
+      'Kotlin은 JVM에서 동작하는 프로그래밍 언어입니다. Kotlin은 Java와의 상호 운용성을 제공하며, Android 애플리케이션 개발에 사용됩니다.',
+    prev: [],
+    next: ['Andorid', 'Android_developer'],
+    related: ['Java'],
+  },
+  Andorid: {
+    id: 'Andorid',
+    type: 'skill',
+    title: 'Andorid',
+    content:
+      'Android는 리눅스 기반의 모바일 운영체제입니다. Android는 Java와 Kotlin을 통해 애플리케이션을 개발할 수 있습니다.',
+    prev: ['Kotlin'],
+    next: [],
+    related: [],
+  },
+  Swift: {
+    id: 'Swift',
+    type: 'skill',
+    title: 'Swift',
+    content:
+      'Swift는 애플의 프로그래밍 언어입니다. Swift는 iOS, macOS, watchOS, tvOS 등의 애플리케이션 개발에 사용됩니다.',
+    prev: [],
+    next: ['ios', 'iOS_developer'],
+    related: [],
+  },
+  ios: {
+    id: 'ios',
+    type: 'skill',
+    title: 'ios',
+    content:
+      'ios는 애플의 모바일 운영체제입니다. ios는 Swift를 통해 애플리케이션을 개발할 수 있습니다.',
+    prev: ['Swift'],
+    next: [],
+    related: [],
   },
   JavaFX: {
     id: 'JavaFX',
@@ -432,21 +555,34 @@ export const TodoData: { [key in string]: TodoNode } = {
     next: [],
     related: [],
   },
-  Sophomore: {
-    id: 'Sophomore',
+  sophomore: {
+    id: 'sophomore',
     type: 'grade',
     title: '2학년',
-    content: '2학년 과목들 입니다.',
-    prev: ['FreshMan'],
+    content:
+      '<img width ="10px" src="https://i.imgur.com/Vue1AE6.png" > <br>벌써 2학년 ?! 전공과 가까워지는 2학년 ! 꾸준함이 습관이 돼봅시다!',
+    prev: ['freshMan'],
     next: ['junior'],
     related: [
-      'DataStructure',
-      'Algorithm',
-      'ProbabilityStatistics',
+      'dataStructure',
+      'algorithm',
+      'probabilityStatistics',
       'openSource',
       'ProgrammingLanguage',
       'OOP',
+      'WebProgramming',
+      'dataStructure',
+      'algorithm',
     ],
+  },
+  WebProgramming: {
+    id: 'WebProgramming',
+    type: 'class',
+    title: '웹 프로그래밍',
+    content: '웹',
+    prev: [],
+    next: [],
+    related: ['html', 'css', 'javascript', 'react', 'typescript', 'sophomore'],
   },
   probabilityStatistics: {
     id: 'probabilityStatistics',
@@ -456,17 +592,25 @@ export const TodoData: { [key in string]: TodoNode } = {
       '확률과 통계는 사건이 발생할 확률과 데이터의 패턴을 분석하는 수학적인 기법과 원리를 다루는 과목입니다. 이 과목에서는 확률 분포, 표본 추출, 가설 검정, 회귀 분석 등을 다루며, 데이터를 수집, 정리, 해석하여 신뢰할 수 있는 결론을 도출하는 방법을 학습합니다. 확률과 통계는 다양한 분야에서 데이터 분석, 예측, 의사 결정 등에 활용되며, 학문적이고 실용적인 통계적 사고와 능력을 배양합니다.',
     prev: [],
     next: ['machineLearning'],
-    related: ['numpy', 'matplotlib', 'python'],
+    related: ['numpy', 'matplotlib', 'python', 'sophomore'],
   },
   ProgrammingLanguage: {
     id: 'ProgrammingLanguage',
     type: 'class',
-    title: '프로그래밍언어론',
+    title: '프로그래밍어론',
     content:
-      '프로그래밍 언어론은 프로그래밍 언어의 구문, 의미론, 동작 원리 등을 연구하는 컴퓨터 과학의 핵심 과목입니다. 이 과목에서는 프로그래밍 언어의 설계 원칙, 구문 분석, 타입 시스템, 실행 모델 등을 다루며, 다양한 언어의 비교와 분석을 통해 프로그래밍 언어의 특성을 이해합니다. 프로그래밍 언어론은 개발자들이 효과적이고 안정적인 소프트웨어를 개발하기 위해 필요한 기초 이론을 제공합니다.',
+      '프로그래밍 어론은 프로그래밍 언어의 구문, 의미론, 동작 원리 등을 연구하는 컴퓨터 과학의 핵심 과목입니다. 이 과목에서는 프로그래밍 언어의 설계 원칙, 구문 분석, 타입 시스템, 실행 모델 등을 다루며, 다양한 언어의 비교와 분석을 통해 프로그래밍 언어의 특성을 이해합니다. 프로그래밍 언어론은 개발자들이 효과적이고 안정적인 소프트웨어를 개발하기 위해 필요한 기초 이론을 제공합니다.',
     prev: ['OOP'],
     next: ['compiler'],
-    related: ['python', 'C', 'Cpp', 'Java', 'javascript', 'typescript'],
+    related: [
+      'python',
+      'C',
+      'Cpp',
+      'Java',
+      'javascript',
+      'typescript',
+      'sophomore',
+    ],
   },
   openSource: {
     id: 'openSource',
@@ -476,17 +620,17 @@ export const TodoData: { [key in string]: TodoNode } = {
       '오픈소스소프트웨어는 소스코드를 공개하여 누구나 자유롭게 사용, 복제, 배포, 수정할 수 있는 소프트웨어를 말합니다. 이 과목에서는 오픈소스의 개념과 역사, 그리고 오픈소스 라이선스에 대해 학습합니다. 또한 오픈소스의 장점과 단점, 그리고 오픈소스 활동에 참여하는 방법과 오픈소스 프로젝트를 진행하는 방법을 배웁니다. 오픈소스는 소프트웨어 개발에 있어서 중요한 역할을 하고 있으며, 오픈소스 활동은 개발자들의 협업과 커뮤니케이션 능력을 향상시키는 데 도움을 줍니다.',
     prev: [],
     next: [],
-    related: ['git'],
+    related: ['git', 'sophomore'],
   },
-  dataStrucutre: {
-    id: 'dataStrucutre',
+  dataStructure: {
+    id: 'dataStructure',
     type: 'class',
     title: '자료구조',
     content:
       '자료구조는 데이터를 조직화하고 저장하는 방법을 연구하는 컴퓨터 과학의 핵심 과목입니다. 이 과목에서는 배열, 연결 리스트, 스택, 큐, 트리, 그래프 등의 다양한 데이터 구조와 그들의 동작, 효율성을 학습합니다. 자료구조는 알고리즘의 효율성과 문제 해결 능력을 향상시키는 데 중요한 역할을 합니다.',
     prev: ['computerProgrammingAndPractice'],
     next: ['algorithm'],
-    related: ['python', 'C', 'Cpp'],
+    related: ['python', 'C', 'Cpp', 'sophomore'],
   },
   algorithm: {
     id: 'algorithm',
@@ -494,9 +638,9 @@ export const TodoData: { [key in string]: TodoNode } = {
     title: '알고리즘',
     content:
       '알고리즘 과목은 문제를 해결하기 위한 단계적인 절차와 규칙을 설계하는 기술과 이론을 다루는 과목입니다. 이 과목에서는 효율적인 알고리즘 설계와 분석 기법, 자료 구조의 활용 등을 학습하여 다양한 문제를 효율적으로 해결하는 방법을 배웁니다. 알고리즘 과목은 프로그래밍, 데이터 분석, 인공지능 등 다양한 컴퓨터 과학 분야에서 필수적인 기반 지식을 제공합니다.',
-    prev: ['dataStrucutre'],
+    prev: ['dataStructure'],
     next: ['beakJoon', 'programmers', 'codeForce', 'codeTree', 'codeUp'],
-    related: ['python', 'C', 'Cpp', 'Java'],
+    related: ['python', 'C', 'Cpp', 'Java', 'sophomore'],
   },
   OOP: {
     id: 'OOP',
@@ -505,13 +649,14 @@ export const TodoData: { [key in string]: TodoNode } = {
     content: '객체지향프로그래밍은 ~~',
     prev: [],
     next: ['DesignPattern', 'ProgrammingLanguage'],
-    related: ['Cpp', 'Java'],
+    related: ['Cpp', 'Java', 'sophomore'],
   },
   junior: {
     id: 'junior',
     type: 'grade',
     title: '3학년',
-    content: '3학년 과목들입니다.',
+    content:
+      '<img width ="10px" src="https://i.imgur.com/NuSEFap.png" ><br>큰 도약을 위한 준비! 지금 흘리는 땀방울은 미래의 나를 위한 것이다!',
     prev: ['sophomore'],
     next: ['senior'],
     related: [
@@ -536,7 +681,7 @@ export const TodoData: { [key in string]: TodoNode } = {
       '컴퓨터 구조는 컴퓨터 시스템의 구성과 동작 원리를 다루는 과목으로, 하드웨어와 소프트웨어 간의 상호작용과 데이터 처리를 이해하는 데 중점을 둡니다. 이 과목에서는 중앙처리장치(CPU), 기억장치, 입출력 장치 등의 구성 요소와 데이터 플로우, 명령어 실행, 인터럽트 처리 등의 주요 개념을 학습합니다. 컴퓨터 구조는 컴퓨터 시스템의 성능, 효율성, 보안 등을 이해하고 설계하기 위한 필수적인 이론과 기술을 제공합니다.',
     prev: [],
     next: ['operatingSystem'],
-    related: ['C', 'assembly'],
+    related: ['C', 'assembly', 'junior'],
   },
   systemProgramming: {
     id: 'systemProgramming',
@@ -546,9 +691,8 @@ export const TodoData: { [key in string]: TodoNode } = {
       '시스템 프로그래밍은 운영체제와 하드웨어를 다루는 프로그램 개발에 중점을 둔 과목으로, 저수준의 시스템 기능을 활용하여 효율적인 소프트웨어를 구현하는 기술을 학습합니다. 이 과목에서는 시스템 호출, 파일 입출력, 프로세스 및 스레드 관리, 메모리 관리 등과 같은 시스템 레벨의 프로그래밍 작업을 다루며, 시스템의 성능, 보안, 안정성을 고려한 프로그램 개발 능력을 강화합니다. 시스템 프로그래밍은 운영체제와의 인터페이스를 통해 하드웨어를 제어하고 다양한 시스템 리소스를 효율적으로 활용하는 데 중요한 역할을 합니다.',
     prev: [],
     next: ['operatingSystem'],
-    related: ['C'],
+    related: ['C', 'junior'],
   },
-
   DesignPattern: {
     id: 'DesignPattern',
     type: 'class',
@@ -556,7 +700,7 @@ export const TodoData: { [key in string]: TodoNode } = {
     content: '디자인패턴은 ~~',
     prev: ['OOP'],
     next: [],
-    related: ['Java', 'python'],
+    related: ['Java', 'python', 'junior'],
   },
   dataMining: {
     id: 'dataMining',
@@ -566,7 +710,7 @@ export const TodoData: { [key in string]: TodoNode } = {
       '데이터마이닝은 대규모 데이터에서 유용한 정보와 패턴을 발견하고 추출하는 기술과 과정을 다루는 과목입니다. 이 과목에서는 데이터 전처리, 분석 알고리즘, 모델링 기법 등을 학습하여 데이터로부터 의미 있는 인사이트를 도출하고 예측 모델을 구축하는 방법을 배웁니다. 데이터마이닝은 비즈니스 인텔리전스, 마케팅 전략, 금융 분석 등 다양한 분야에서 의사 결정과 문제 해결을 위해 활용됩니다.',
     prev: [],
     next: ['dataBaseDesign'],
-    related: [],
+    related: ['junior'],
   },
   dataTransfer: {
     id: 'dataTransfer',
@@ -576,9 +720,8 @@ export const TodoData: { [key in string]: TodoNode } = {
       '데이터 통신은 컴퓨터 네트워크를 통해 데이터를 전송하는 방법과 프로토콜을 다루는 과목입니다. 이 과목에서는 데이터 전송의 기본 원리, 물리적인 전송 매체, 데이터 인코딩, 패킷 스위칭, 라우팅 등에 대해 학습하며, TCP/IP 프로토콜 스택을 중심으로 네트워크 프로토콜의 동작과 구성을 이해합니다. 데이터 통신 과목은 실제 네트워크 구축과 관리, 네트워크 보안 등 다양한 네트워크 관련 업무에 필요한 기술과 이해력을 강화합니다.',
     prev: [],
     next: ['computerNetwork'],
-    related: [],
+    related: ['junior'],
   },
-
   machineLearning: {
     id: 'machineLearning',
     type: 'class',
@@ -587,7 +730,7 @@ export const TodoData: { [key in string]: TodoNode } = {
       '머신러닝은 컴퓨터 시스템이 데이터로부터 학습하고 패턴을 인식하여 자동으로 결정을 내리는 인공지능 분야입니다. 이 과목에서는 데이터 분석 기법, 학습 알고리즘, 모델 평가 및 최적화 등을 다루며, 지도 학습, 비지도 학습, 강화 학습 등의 다양한 머신러닝 방법론을 학습합니다. 머신러닝은 예측, 분류, 군집화 등 다양한 응용 분야에서 활용되며, 데이터 기반 의사 결정과 패턴 인식에 중요한 역할을 합니다.',
     prev: ['probabilityStatistics'],
     next: ['deepLearning', 'computerVision', 'NLP'],
-    related: ['numpy', 'matplotlib', 'python', 'TensorFlow'],
+    related: ['numpy', 'matplotlib', 'python', 'TensorFlow', 'junior'],
   },
   NLP: {
     id: 'NLP',
@@ -597,9 +740,8 @@ export const TodoData: { [key in string]: TodoNode } = {
       '자연어 처리(Natural Language Processing, NLP)는 인간의 언어를 컴퓨터가 이해하고 처리할 수 있는 형태로 변환하는 기술입니다. 자연어 처리는 컴퓨터가 텍스트 데이터를 분석, 이해, 생성하고, 문장의 의미를 추출하거나 감성 분석, 기계 번역, 질의응답 시스템 등 다양한 언어 기반 작업을 수행할 수 있게 합니다. 자연어 처리는 토큰화, 품사 태깅, 구문 분석, 개체명 인식, 단어 임베딩 등 다양한 기술과 알고리즘을 활용하여 구현됩니다. 이를 통해 자연어 처리 기술은 자동화된 챗봇, 문서 분류, 텍스트 요약, 정보 추출 등 다양한 실전 응용 프로그램에서 활용됩니다.',
     prev: ['machineLearning'],
     next: [],
-    related: ['TensorFlow'],
+    related: ['TensorFlow', 'junior'],
   },
-
   compiler: {
     id: 'compiler',
     type: 'class',
@@ -608,7 +750,7 @@ export const TodoData: { [key in string]: TodoNode } = {
       '컴파일러 과목은 프로그래밍 언어로 작성된 소스 코드를 기계어로 변환하는 컴파일러의 동작 원리와 설계에 대해 다루는 컴퓨터 과학의 핵심 과목입니다. 이 과목에서는 어휘 분석, 구문 분석, 의미 분석, 코드 생성 등의 단계를 학습하며, 언어의 문법에 따라 소스 코드를 분석하고 변환하는 방법을 이해합니다. 컴파일러 과목은 프로그래밍 언어와 컴퓨터 아키텍처 사이의 인터페이스를 이해하고, 효율적인 프로그램 실행을 위해 필수적인 지식을 제공합니다.',
     prev: ['ProgrammingLanguage'],
     next: [],
-    related: [],
+    related: ['junior'],
   },
   operatingSystem: {
     id: 'operatingSystem',
@@ -616,11 +758,10 @@ export const TodoData: { [key in string]: TodoNode } = {
     title: '운영체제',
     content:
       '운영체제는 컴퓨터 시스템의 핵심 소프트웨어로, 하드웨어와 애플리케이션 사이에서 중재자 역할을 합니다. 이 과목에서는 프로세스 스케줄링, 메모리 관리, 파일 시스템, 입출력 관리 등의 주요 개념과 알고리즘을 다루며, 컴퓨터 시스템의 자원을 효율적으로 관리하고 사용자 및 애플리케이션의 요구를 충족시키는 역할을 학습합니다. 운영체제 과목은 시스템의 안정성, 보안, 성능을 향상시키기 위한 필수적인 이론과 기술을 제공합니다.',
-    prev: ['computerArchitecture'],
+    prev: ['computerArchitecture', 'systemProgramming'],
     next: [],
-    related: [],
+    related: ['junior'],
   },
-
   computerNetwork: {
     id: 'computerNetwork',
     type: 'class',
@@ -629,7 +770,7 @@ export const TodoData: { [key in string]: TodoNode } = {
       '컴퓨터 네트워크는 컴퓨터 시스템 간에 데이터와 자원을 공유하기 위한 연결된 구조로, 정보를 교환하고 통신하는 방법을 다루는 과목입니다. 이 과목에서는 네트워크 구성, 프로토콜, 라우팅, 데이터 전송 등의 주요 개념과 기술을 학습하며, 이더넷, TCP/IP, 라우터, 스위치 등의 네트워크 장비와 동작 원리를 이해합니다. 컴퓨터 네트워크 과목은 실제 네트워크 설계, 구축, 관리 및 보안에 필요한 기반 지식을 제공합니다.',
     prev: ['dataTransfer'],
     next: [],
-    related: [],
+    related: ['junior'],
   },
   dataBase: {
     id: 'dataBase',
@@ -639,13 +780,14 @@ export const TodoData: { [key in string]: TodoNode } = {
       '데이터베이스는 구조화된 데이터를 저장, 관리, 조작하는 시스템이며, 데이터의 효율적인 검색과 업데이트를 가능하게 합니다. 데이터베이스 과목에서는 관계형 데이터베이스 모델, SQL 쿼리 언어, 데이터베이스 설계 및 정규화 등을 학습하여 데이터베이스의 구축, 관리, 백업, 복원에 필요한 기술을 습득합니다. 데이터베이스는 다양한 애플리케이션과 시스템에서 데이터를 효율적으로 조작하고 유지하기 위해 필수적인 기반 기술입니다.',
     prev: [],
     next: ['dataBaseDesign'],
-    related: ['mysql'],
+    related: ['mysql', 'junior'],
   },
-  sinnor: {
-    id: 'sinnor',
+  senior: {
+    id: 'senior',
     type: 'grade',
     title: '4학년',
-    content: '4학년 과목들입니다.',
+    content:
+      '<img width ="10px" src="https://i.imgur.com/qA9UzX8.png" ><br>이제는 실전! 그 동안 기술들을 펼쳐보아요!.',
     prev: ['junior'],
     next: [],
     related: [
@@ -663,7 +805,7 @@ export const TodoData: { [key in string]: TodoNode } = {
       '딥러닝은 인공신경망을 기반으로 한 머신러닝의 한 분야로, 다층 신경망을 사용하여 복잡한 문제를 해결하는 기술입니다. 이 과목에서는 심층 신경망의 구조와 학습 알고리즘을 학습하며, 이미지 인식, 음성 인식, 자연어 처리 등 다양한 분야에서 딥러닝을 활용하는 방법을 배웁니다. 딥러닝은 대용량의 데이터와 강력한 컴퓨팅 리소스를 활용하여 높은 수준의 성능을 달성할 수 있으며, 인공지능 분야에서 혁신적인 발전을 이끌고 있습니다.',
     prev: ['machineLearning'],
     next: [],
-    related: ['TensorFlow'],
+    related: ['TensorFlow', 'senior'],
   },
   computerVision: {
     id: 'computerVision',
@@ -673,7 +815,7 @@ export const TodoData: { [key in string]: TodoNode } = {
       '컴퓨터 비전은 컴퓨터 시스템이 이미지나 비디오에서 의미 있는 정보를 추출하고 이해하는 기술을 다루는 과목입니다. 이 과목에서는 이미지 처리, 객체 인식, 추적, 세분화 등을 다루며, 딥러닝과 기계 학습 기법을 활용하여 시각적 데이터를 분석하고 해석하는 방법을 학습합니다. 컴퓨터 비전은 자율 주행 차량, 얼굴 인식, 보안 시스템 등 다양한 응용 분야에서 중요한 역할을 하며, 시각적 정보를 처리하고 이해하는 능력을 강화합니다.',
     prev: ['machineLearning'],
     next: [],
-    related: ['TensorFlow'],
+    related: ['TensorFlow', 'senior'],
   },
   dataBaseDesign: {
     id: 'dataBaseDesign',
@@ -683,7 +825,7 @@ export const TodoData: { [key in string]: TodoNode } = {
       '데이터베이스 설계는 구조화된 데이터를 효율적으로 저장하고 검색하기 위해 데이터베이스를 설계하는 과정을 다루는 과목입니다. 이 과목에서는 개체-관계 모델(ER 모델), 정규화, 스키마 설계 등의 기법과 원칙을 학습하여 데이터베이스의 구조를 최적화하고 일관성과 효율성을 유지합니다. 데이터베이스 설계는 데이터의 정확성, 일관성, 보안성을 보장하며, 실제 업무 요구사항을 충족하는 효율적인 데이터베이스 시스템을 구축하기 위해 필수적인 단계입니다.',
     prev: ['dataMining', 'dataBase'],
     next: [],
-    related: ['mysql'],
+    related: ['mysql', 'senior'],
   },
   gameProgramming: {
     id: 'gameProgramming',
@@ -693,9 +835,8 @@ export const TodoData: { [key in string]: TodoNode } = {
       '게임 프로그래밍 과목은 게임 개발에 필요한 프로그래밍 기술과 개념을 학습하는 과목으로, 게임 엔진과 언어를 활용하여 다양한 게임 요소를 구현하는 방법을 배웁니다. 이 과목에서는 게임 로직, 그래픽 처리, 물리 시뮬레이션, 사용자 입력 처리 등의 주요 개념과 알고리즘을 다루며, 게임 개발 프로세스와 팀 기반 작업을 경험하고 게임 디자인 원칙을 이해합니다. 게임 프로그래밍 과목은 게임 업계에서의 진로나 개인적인 게임 프로젝트를 위한 필수적인 기술과 지식을 제공합니다.',
     prev: [],
     next: [],
-    related: ['unity', 'cs'],
+    related: ['unity', 'cs', 'senior'],
   },
-
   assembly: {
     id: 'assembly',
     type: 'skill',
@@ -706,7 +847,6 @@ export const TodoData: { [key in string]: TodoNode } = {
     next: [],
     related: ['computerArchitecture', 'C'],
   },
-
   mysql: {
     id: 'mysql',
     type: 'skill',
@@ -714,10 +854,9 @@ export const TodoData: { [key in string]: TodoNode } = {
     content:
       'mysql은MySQL은 오픈 소스 관계형 데이터베이스 관리 시스템(RDBMS)으로, 데이터의 저장, 검색, 관리를 위한 기능을 제공하는 소프트웨어입니다. MySQL은 다양한 플랫폼에서 동작하며, 신뢰성과 성능에 중점을 둔 데이터베이스 시스템으로 널리 사용됩니다. SQL(Structured Query Language)을 사용하여 데이터베이스에 쿼리를 실행하고, 데이터의 효율적인 관리와 보안을 지원합니다.',
     prev: [],
-    next: [],
+    next: ['Web_developer_back', 'Data_Scientist'],
     related: ['dataBase', 'dataBaseDesign', 'Hibernate'],
   },
-
   unity: {
     id: 'unity',
     type: 'skill',
@@ -735,10 +874,19 @@ export const TodoData: { [key in string]: TodoNode } = {
     content:
       'C#은 Microsoft에서 개발한 다용도 프로그래밍 언어로, 강력한 객체 지향 기능과 간결한 문법을 가지고 있습니다. C#은 .NET 프레임워크와 함께 사용되며, Windows 애플리케이션, 웹 애플리케이션, 게임 개발 등 다양한 플랫폼과 분야에서 널리 활용됩니다. C#은 안정성과 생산성을 강조하는 언어로, 개발자들에게 강력한 개발 도구와 라이브러리를 제공하여 효율적이고 확장 가능한 애플리케이션을 개발할 수 있게 합니다.',
     prev: [],
-    next: [],
-    related: ['gameProgramming'],
+    next: ['Game_developer'],
+    related: [
+      'gameProgramming',
+      'Modoo_developer_fifth',
+      'Seoul_IT_Innovationsquare',
+      'OpenSW_developer_competition',
+      'Naver_Boost_Camp',
+      'Naver_Boost_Camp_Ai',
+      'ROS_Education_AI',
+      'DevOps_Developer_Education',
+      'MetaVerse_developer_competition',
+    ],
   },
-
   git: {
     id: 'git',
     type: 'skill',
@@ -749,7 +897,6 @@ export const TodoData: { [key in string]: TodoNode } = {
     next: [],
     related: ['openSource'],
   },
-
   beakJoon: {
     id: 'beakJoon',
     type: 'competition',
@@ -852,7 +999,7 @@ export const TodoData: { [key in string]: TodoNode } = {
     content: '<img src="https://api.linkareer.com/attachments/237251"/>',
     prev: [],
     next: [],
-    related: [],
+    related: ['C', 'Cpp', 'cs', 'Java', 'react', 'javascript'],
   },
   Seoul_IT_Innovationsquare: {
     id: 'Seoul_IT_Innovationsquare',
@@ -863,7 +1010,7 @@ export const TodoData: { [key in string]: TodoNode } = {
       '<img src="https://allforyoung-homepage-maycan.s3.ap-northeast-2.amazonaws.com/uploads/post_photos/2023/06/20/0f5e463b689a4224b7be773b303a1469.jpg">',
     prev: [],
     next: [],
-    related: [],
+    related: ['C', 'Cpp', 'cs', 'Java', 'javascript', 'react'],
   },
   OpenSW_developer_competition: {
     id: 'OpenSW_developer_competition',
@@ -873,9 +1020,8 @@ export const TodoData: { [key in string]: TodoNode } = {
       '<img src="https://allforyoung-homepage-maycan.s3.ap-northeast-2.amazonaws.com/uploads/post_photos/2023/06/21/b38bcc3bdfb040c699182b48f589e85f.png">',
     prev: [],
     next: [],
-    related: [],
+    related: ['C', 'Cpp', 'cs', 'Java', 'javascript', 'react', 'python'],
   },
-
   JAVA_backend_boot_camp: {
     id: 'JAVA_backend_boot_camp',
     type: 'competition',
@@ -886,5 +1032,115 @@ export const TodoData: { [key in string]: TodoNode } = {
     prev: [],
     next: [],
     related: ['Java'],
+  },
+  Naver_Boost_Camp: {
+    id: 'Naver_Boost_Camp',
+    type: 'competition',
+    title: '네이버부스트캠프 웹,모바일 2023 8기 모집',
+    content:
+      '<img src="https://ssl.pstatic.net/static/dm/boostcamp/img/webmobile/img-aitech-kv-1@2x.png">',
+    prev: [],
+    next: [],
+    related: ['C', 'Cpp', 'cs', 'Java', 'javascript', 'react', 'python'],
+  },
+  Naver_Boost_Camp_Ai: {
+    id: 'Naver_Boost_Camp_Ai',
+    type: 'competition',
+    title: '네이버부스트캠프 AI Tech',
+    content:
+      '<img src="https://ssl.pstatic.net/static/dm/boostcamp/img/ai_tech/main_spot_ai_tech_v2.jpg">',
+    prev: [],
+    next: [],
+    related: ['C', 'Cpp', 'cs', 'Java', 'javascript', 'react', 'python'],
+  },
+  ROS_Education_AI: {
+    id: 'ROS_Education_AI',
+    type: 'competition',
+    title: 'ROS와 딥러닝을 활용한 AI로봇 자율주행 개발자 과정',
+    content:
+      '</br><img src="https://www.all-con.co.kr/data/poster/2304/496086.jpg?v=1684128033">',
+    prev: [],
+    next: [],
+    related: ['C', 'Cpp', 'cs', 'Java', 'javascript', 'react', 'python'],
+  },
+  DevOps_Developer_Education: {
+    id: 'DevOps_Developer_Education',
+    type: 'competition',
+    title: '[국비지원 과정] Node.js 기반 DevOps 개발자 양성과정 참가자 모집',
+    content:
+      '<img src="https://www.wevity.com/upload/contest/20230601130057_18a096e3.jpg">',
+    prev: [],
+    next: [],
+    related: ['C', 'Cpp', 'cs', 'Java', 'javascript', 'react', 'python'],
+  },
+  MetaVerse_developer_competition: {
+    id: 'MetaVerse_developer_competition',
+    type: 'competition',
+    title: 'K-디지털 챌린지 : 2023년 메타버스 개발자 경진대회',
+    content:
+      '<img src="https://metaversedev.kr/storage/app/public/thumbnails/3e/5a/spill_800x800_4e8a95e103e9d8611df7d179765a25afc045ea0f.jpg">',
+    prev: [],
+    next: [],
+    related: ['C', 'Cpp', 'cs', 'Java', 'javascript', 'react', 'python'],
+  },
+  iOS_developer: {
+    id: 'iOS_developer',
+    type: 'job',
+    title: 'iOS개발자',
+    content:
+      '애플리케이션 개발: iOS 개발자는 Swift 또는 Objective-C를 사용하여 iOS 애플리케이션을 개발합니다. 이는 사용자가 iPhone, iPad 또는 iPod Touch와 같은 iOS 기기에서 실행할 수 있는 앱입니다. 애플리케이션의 기획서나 디자인을 바탕으로 코드를 작성하고, 화면 구성, 기능 구현, 데이터 처리 등을 담당합니다.<br>사용자 인터페이스(UI) 개발: iOS 개발자는 사용자가 직접 상호작용할 수 있는 앱의 UI를 개발합니다. UIKit 프레임워크를 사용하여 화면 구성, 버튼, 텍스트 필드, 테이블 뷰 등의 UI 요소를 디자인하고 구현합니다. 인터페이스 디자인 가이드라인을 준수하여 사용자 경험(UX)을 향상시킵니다.<br>데이터 관리: iOS 애플리케이션은 종종 데이터를 저장, 검색, 관리해야 합니다. iOS 개발자는 Core Data, Realm, SQLite 등의 데이터베이스 기술을 활용하여 데이터를 영구적으로 저장하고 관리합니다. 데이터의 로컬 캐싱, 네트워크 통신, 데이터 동기화 등을 다룹니다.<br>애플리케이션 테스팅: iOS 개발자는 자체적으로 단위 테스트 및 통합 테스트를 수행하여 애플리케이션의 안정성과 품질을 확보합니다. Xcode와 XCTest 프레임워크를 사용하여 테스트 케이스를 작성하고 실행하여 버그를 찾고 해결합니다.<br>앱 배포: iOS 개발자는 개발한 애플리케이션을 앱 스토어(App Store)에 배포하기 위한 작업을 수행합니다. 앱 스토어에 등록하고, 애플의 배포 가이드라인을 준수하여 앱 스토어에 애플리케이션을 제출합니다. 릴리스 관리와 업데이트도 iOS 개발자의 책임입니다.<br>성능 최적화: iOS 개발자는 애플리케이션의 성능을 개선하기 위해 최적화 작업을 수행합니다. 메모리 관리, 네트워크 효율성, 애니메이션 부드러움 등을 개선하여 사용자 경험을 향상시킵니다.<br>또한, iOS 개발자는 팀 내에서 다른 개발자, 디자이너, QA 엔지니어와 협업하여 프로젝트를 진행하고 문제를 해결합니다. 새로운 기술 및 도구에 대한 학습과 업무 경험을 통해 지속적인 성장과 개발자 커뮤니티와의 지식 공유도 중요한 업무입니다.',
+    prev: ['Swift', 'C'],
+    next: [],
+    related: [],
+  },
+  Android_developer: {
+    id: 'Android_developer',
+    type: 'job',
+    title: 'Android개발자',
+    content:
+      '안드로이드 앱 개발: 안드로이드 개발자는 Java 또는 Kotlin을 사용하여 안드로이드 애플리케이션을 설계하고 개발합니다. 사용자 인터페이스(UI) 구현, 데이터 처리, 네트워킹, 센서 관리, 알림 처리 등 앱의 기능을 구현합니다.<br>안드로이드 프레임워크 이해: 안드로이드 개발자는 안드로이드 프레임워크를 이해하고 활용하여 앱 개발에 필요한 기능을 구현합니다. 안드로이드 SDK(소프트웨어 개발 키트)와 안드로이드 API(Application Programming Interface)를 사용하여 앱의 동작을 제어하고 안드로이드 운영체제와의 상호작용을 처리합니다.<br>앱 디자인 및 UI/UX 개발: 안드로이드 개발자는 사용자 경험(UX)을 고려하여 앱의 디자인과 사용자 인터페이스(UI)를 개발합니다. 앱의 레이아웃, 화면 전환, 애니메이션 등을 구현하여 사용자가 쉽고 편리하게 앱을 이용할 수 있도록 합니다.<br>앱 테스팅 및 디버깅: 안드로이드 개발자는 앱의 테스트를 수행하여 버그를 찾고 수정합니다. 앱의 안정성과 품질을 확인하기 위해 유닛 테스트, 통합 테스트, UI 테스트 등을 수행하고 디버깅 도구를 사용하여 문제를 해결합니다.<br>앱 배포 및 유지보수: 안드로이드 개발자는 Google Play 스토어와 같은 앱 배포 플랫폼에 앱을 등록하고 배포합니다. 또한, 새로운 기능 추가, 버그 수정, 안드로이드 운영체제 업데이트 대응 등 앱의 유지보수 작업을 수행하여 사용자들에게 최신 버전의 안정적인 앱을 제공합니다.',
+    prev: ['Java', 'Kotlin'],
+    next: [],
+    related: [],
+  },
+  Web_developer_front: {
+    id: 'Web_developer_front',
+    type: 'job',
+    title: '웹프론트엔드개발자',
+    content:
+      '웹 디자인 구현: 웹 프론트엔드 개발자는 웹 디자이너가 제공한 디자인 컨셉을 HTML, CSS, JavaScript를 사용하여 웹 페이지로 구현합니다. 웹 페이지의 레이아웃, 색상, 폰트, 이미지 등을 처리하여 사용자에게 시각적으로 매력적인 웹 인터페이스를 제공합니다<br>웹 기능 개발: 웹 프론트엔드 개발자는 JavaScript를 사용하여 웹 페이지의 동적인 기능을 개발합니다. 사용자의 상호작용에 따라 웹 페이지를 업데이트하거나 추가 기능을 제공하는데 필요한 코드를 작성합니다. 예를 들어, 사용자 입력 처리, 데이터 표시, 애니메이션, 이벤트 처리 등을 구현합니다.<br>웹 호환성 보장: 웹 프론트엔드 개발자는 다양한 웹 브라우저와 기기에서 웹 페이지가 일관되게 표시되도록 보장합니다. 크로스 브라우징 및 반응형 웹 디자인 기술을 사용하여 웹 페이지가 여러 환경에서 잘 작동하고 사용자 경험을 향상시킵니다.<br>웹 성능 최적화: 웹 프론트엔드 개발자는 웹 페이지의 성능을 향상시키기 위해 최적화 작업을 수행합니다. 파일 크기 최소화, 리소스 캐싱, 비동기 데이터 로딩 등을 통해 빠른 페이지 로딩 속도와 웹 애플리케이션의 효율성을 개선합니다.<br>웹 접근성 고려: 웹 프론트엔드 개발자는 웹 페이지를 접하는 모든 사용자들에게 접근성을 제공하기 위해 웹 접근성 가이드라인을 준수합니다. 웹 콘텐츠의 시각, 청각, 운동 등 다양한 장애를 가진 사용자들이 웹 페이지를 이용할 수 있도록 보장합니다.<br>협업과 커뮤니케이션: 웹 프론트엔드 개발자는 디자이너, 백엔드 개발자, 프로젝트 매니저 등과 협업하며 웹 프로젝트를 진행합니다. 요구 사항 이해, 기술적인 제약 사항 고려, 문제 해결을 위한 커뮤니케이션 등을 수행하여 효율적인 웹 프론트엔드 개발을 진행합니다.',
+    prev: ['html', 'css', 'javascript'],
+    next: [],
+    related: [],
+  },
+  Web_developer_back: {
+    id: 'Web_developer_back',
+    type: 'job',
+    title: '웹백엔드개발자',
+    content:
+      '서버 측 어플리케이션 개발: 웹 백엔드 개발자는 서버 측 언어(예: Python, Java, Ruby, PHP)를 사용하여 웹 애플리케이션의 핵심 로직을 개발합니다. 데이터베이스와의 상호작용, 비즈니스 로직 처리, 보안 기능 등을 구현하여 웹 애플리케이션의 기능을 제공합니다.<br>데이터베이스 관리: 웹 백엔드 개발자는 데이터베이스를 설계하고 관리합니다. 데이터의 저장, 검색, 업데이트, 삭제 등을 처리하여 웹 애플리케이션에서 필요한 정보를 관리합니다. 주로 SQL(Structured Query Language)을 사용하여 데이터베이스와 상호작용합니다.<br>API 개발: 웹 백엔드 개발자는 외부 시스템 또는 클라이언트 애플리케이션과의 상호작용을 위한 API(Application Programming Interface)를 개발합니다. API를 통해 데이터를 제공하거나 작업을 수행하는 기능을 제공하여 다른 애플리케이션과의 통합을 용이하게 합니다.<br>보안 구현: 웹 백엔드 개발자는 웹 애플리케이션의 보안을 고려하여 취약점을 식별하고 보안 조치를 적용합니다. 사용자 인증, 데이터 암호화, 입력 유효성 검사, SQL 삽입 공격 방어 등을 통해 웹 애플리케이션의 보안을 강화합니다.<br>서버 성능 최적화: 웹 백엔드 개발자는 서버의 성능을 향상시키기 위해 최적화 작업을 수행합니다. 서버 리소스 관리, 캐싱, 병렬 처리 등을 통해 높은 처리량과 빠른 응답 시간을 달성하여 웹 애플리케이션의 성능을 향상시킵니다.<br>시스템 관리: 웹 백엔드 개발자는 서버와 관련된 시스템 설정, 배포, 모니터링, 로깅 등을 관리합니다. 서버의 안정성과 가용성을 유지하며, 이슈나 오류를 해결하여 웹 애플리케이션의 원활한 운영을 지원합니다.',
+    prev: ['python', 'Java', 'mysql'],
+    next: [],
+    related: [],
+  },
+  Data_Scientist: {
+    id: 'Data_Scientist',
+    type: 'job',
+    title: '데이터과학자',
+    content:
+      '데이터 수집 및 전처리: 다양한 데이터 소스에서 데이터를 수집하고 정리하여 분석에 사용할 수 있는 형태로 가공합니다. 데이터 전처리 작업을 통해 불완전하거나 오류가 있는 데이터를 정제하고, 결측치 처리, 이상치 제거, 데이터 형식 변환 등을 수행합니다<br>데이터 분석 및 모델링: 수집한 데이터를 분석하여 통계적인 모델을 개발하고 예측, 분류, 군집화 등의 기법을 활용하여 데이터의 특성을 이해하고 인사이트를 도출합니다. 머신러닝, 딥러닝, 통계학 등의 기술과 알고리즘을 적용하여 모델을 구축하고 최적화합니다.<br>시각화 및 표현: 데이터 분석 결과를 시각화하여 직관적으로 이해할 수 있는 형태로 제시합니다. 그래프, 차트, 대시보드 등을 활용하여 데이터의 패턴이나 관계를 시각적으로 표현하고 비즈니스 의사 결정에 도움을 줍니다.<br>예측 및 최적화: 데이터 모델을 활용하여 미래의 동향을 예측하고, 비즈니스 문제를 해결하기 위한 최적의 전략을 도출합니다. 수익 예측, 고객 세그먼테이션, 재고 최적화, 가격 최적화 등 다양한 예측 및 최적화 작업을 수행합니다.<br>비즈니스 인텔리전스 지원: 데이터 사이언스 결과를 비즈니스 요구에 맞게 해석하고 비즈니스 전략과 의사 결정을 지원합니다. 데이터 기반의 통찰력과 인사이트를 제공하여 조직 내에서 전략적인 의사 결정에 활용될 수 있도록 돕습니다.',
+    prev: ['python', 'mysql', 'Java'],
+    next: [],
+    related: [],
+  },
+  Game_developer: {
+    id: 'Game_developer',
+    type: 'job',
+    title: '게임 개발자',
+    content:
+      '게임 개발 계획: 게임 개발자는 게임의 아이디어를 기반으로 개발 계획을 수립합니다. 이는 게임의 목표, 플랫폼, 장르, 기능, 그래픽, 음향 등을 정의하는 단계입니다.<br>게임 디자인: 게임 개발자는 게임의 규칙, 레벨 디자인, 캐릭터 및 아이템 설정, 게임 플레이 메커니즘 등을 디자인합니다. 게임 디자인은 플레이어 경험을 개발하기 위한 핵심 단계입니다.<br>그래픽 및 애니메이션 개발: 게임 개발자는 게임의 그래픽 요소와 애니메이션을 개발합니다. 이는 캐릭터 디자인, 배경, 효과, 인터페이스 요소 등을 포함합니다.<br>프로그래밍: 게임 개발자는 게임의 기능과 시스템을 프로그래밍합니다. 이는 게임 엔진과 프레임워크를 활용하여 게임 로직, 물리 엔진, 인공지능, 다양한 시스템 및 기능을 구현하는 작업을 포함합니다.<br>테스트 및 디버깅: 게임 개발자는 게임을 테스트하고 버그를 찾아 수정하는 작업을 수행합니다. 게임의 안정성, 성능, 사용자 경험 등을 향상시키기 위해 지속적으로 테스트를 진행합니다.<br>게임 엔진 활용: 게임 개발자는 주로 게임 엔진을 활용하여 게임을 개발합니다. 대표적인 게임 엔진으로는 Unity, Unreal Engine, Cocos2d 등이 있으며, 이러한 엔진을 사용하여 게임을 구축하고 관리합니다.<br>협업: 게임 개발은 팀으로 수행되는 작업이기 때문에 게임 개발자는 다른 개발자, 디자이너, 아티스트 등과 협업합니다. 그들은 아이디어 공유, 작업 일정 조정, 프로젝트 관리 등을 수행합니다.<br>',
+    prev: ['Cpp', 'cs', 'Java', 'python', 'javascript'],
+    next: [],
+    related: [],
   },
 };
