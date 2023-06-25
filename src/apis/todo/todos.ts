@@ -50,6 +50,10 @@ export const useRecommendTodo = () => {
         .map(todo => {
           const recommendReasons = myTodos.reduce(
             (acc: { reason: string; id: string }[], myTodo) => {
+              const target = todos.find(t => t.id === myTodo.id);
+              if (target?.type === 'competition') {
+                return acc;
+              }
               if (myTodo.prev.includes(todo.id)) {
                 acc.push({ reason: 'prev', id: myTodo.id });
               }

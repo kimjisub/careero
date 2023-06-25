@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { TouchableOpacity, View, ViewProps } from 'react-native';
 import styled from 'styled-components';
 
-import { useTodos } from '@/apis/todo/todos';
+import { useRecommendTodo, useTodos } from '@/apis/todo/todos';
 import icProgressBacklog from '@images/progress_backlog.svg';
 import icProgressDoing from '@images/progress_doing.svg';
 import icProgressDone from '@images/progress_done.svg';
@@ -23,12 +23,16 @@ export interface TodoViewProps extends ViewProps {
 
 const TodoItem = ({ todoId, mode = 'default', onPress }: TodoViewProps) => {
   const { data: todos } = useTodos();
+  const { data: recommendedTodos } = useRecommendTodo();
 
   const myTodoNode = todos?.find(a => a.id === todoId);
+  const recommendReasons = recommendedTodos?.find(
+    a => a.id === todoId,
+  )?.recommendReasons;
   const renderReasons = useMemo(() => {
     return (
       <Gap gap={8} flexDirection="row">
-        {myTodoNode?.recommendReasons?.map(reason => {
+        {recommendReasons?.map(reason => {
           const todo = todos?.find(a => a.id === reason.id);
           if (!todo) {
             return null;
@@ -37,7 +41,7 @@ const TodoItem = ({ todoId, mode = 'default', onPress }: TodoViewProps) => {
         })}
       </Gap>
     );
-  }, [myTodoNode?.recommendReasons, todos]);
+  }, [recommendReasons, todos]);
 
   const renderStatusIcon = useMemo(() => {
     switch (myTodoNode?.status) {
