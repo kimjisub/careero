@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ReactNativeBoilerplate.xcodeproj">
+      location = "group:/Users/kimjisub/GitHub/react-native-boilerplate/ios/Careero.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
