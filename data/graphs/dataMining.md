@@ -1,0 +1,3 @@
+
+next: [[dataBaseDesign]]
+related: [[junior]]

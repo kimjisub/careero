@@ -1,0 +1,3 @@
+
+next: 
+related: [[mysql]], [[senior]]

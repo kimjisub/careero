@@ -1,0 +1,3 @@
+
+next: 
+related: [[computerArchitecture]], [[C]]

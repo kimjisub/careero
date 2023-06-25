@@ -1,0 +1,3 @@
+
+next: [[computerNetwork]]
+related: [[junior]]

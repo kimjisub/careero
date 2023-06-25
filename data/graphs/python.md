@@ -1,0 +1,3 @@
+
+next: [[numpy]], [[matplotlib]], [[Pandas]], [[SciPy]], [[ScikitLearn]], [[TensorFlow]], [[PyTorch]], [[Django]], [[Flask]], [[Tkinter]], [[PyQt]], [[Kivy]], [[Web_developer_back]], [[Data_Scientist]], [[Game_developer]]
+related: [[computerThinking]], [[dataStructure]], [[algorithm]], [[probabilityStatistics]], [[machineLearning]], [[beakJoon]], [[codeForce]], [[programmers]], [[codeTree]], [[codeUp]], [[ProgrammingLanguage]], [[DesignPattern]], [[OpenSW_developer_competition]], [[Naver_Boost_Camp]], [[Naver_Boost_Camp_Ai]], [[ROS_Education_AI]], [[DevOps_Developer_Education]], [[MetaVerse_developer_competition]]
