@@ -34,11 +34,45 @@
 
 ## 2. 문제 해결 방법
 
+Careero App 을 통해 사용자에게 필요한 로드맵을 제시한다. <br>
+사용자는 자신이 필요한 기술, 공모전, 대외활동 등을 제시받을 수 있다. <br>
+기술과 관련된 Class에 대한 관계도 또한 가시적으로 보여줌으로써 사용자에게 요구되는 과목 정보를 한 눈에 확인 할 수 있다. 
+
+
 
 ## 3. 주요 기능
 
+
+### __앱 초기화면__ 
+
+<div>
+<img width="200" alt="img0" src="https://github.com/kimjisub/careero/blob/main/docs/todo_0.PNG">
+<img width="200" alt="img1" src="https://github.com/kimjisub/careero/blob/main/docs/roadMap_0.PNG">
+<img width="200" alt="img2" src="https://github.com/kimjisub/careero/blob/main/docs/job_0.PNG">
+<img width="200" alt="img3" src="https://github.com/kimjisub/careero/blob/main/docs/class_0.PNG">
+</div>
+
+### __관심 기술 리스트에 담기__ 
+
+<div>
+<img width="325" alt="img4" src="https://github.com/kimjisub/careero/blob/main/docs/skill_0.PNG">
+<img width="325" alt="img5" src="https://github.com/kimjisub/careero/blob/main/docs/skill_1.PNG">    
+</div>
+
+
+### __관련 기술에 대한 로드맵 제시__ 
+
+<div>
+<img width="225" alt="img6" src="https://github.com/kimjisub/careero/blob/main/docs/class_1.PNG">
+<img width="225" alt="img7" src="https://github.com/kimjisub/careero/blob/main/docs/job_1.PNG">
+<img width="225" alt="img7" src="https://github.com/kimjisub/careero/blob/main/docs/todo_1.PNG">
+</div>
+
+
 ### Data_Graph
-![](https://github.com/kimjisub/careero/blob/main/docs/data_graph.gif)
+
+<img width="725" alt="s4" src="https://github.com/kimjisub/careero/blob/main/docs/data_graph.gif">
+
 
 
 ## 4. 사용 시나리오
