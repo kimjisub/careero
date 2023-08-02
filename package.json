@@ -12,7 +12,8 @@
     "postinstall": "react-native setup-ios-permissions ; npx pod-install ; yarn run licenses",
     "postuninstall": "npx pod-install ; yarn run licenses",
     "build:android": "cd android && ./gradlew bundleRelease && open ./app/build/outputs/bundle/release",
-    "build:android-apk": "cd android && ./gradlew assembleRelease && open ./app/build/outputs/apk/release"
+    "build:android-apk": "cd android && ./gradlew assembleRelease && open ./app/build/outputs/apk/release",
+    "data": "ts-node data/index.ts"
   },
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.5.8",
@@ -71,6 +72,7 @@
     "prettier": "^2.4.1",
     "react-native-svg-transformer": "^1.0.0",
     "react-test-renderer": "18.2.0",
+    "ts-node": "^10.9.1",
     "typescript": "4.8.4",
     "typescript-styled-plugin": "^0.18.3"
   },

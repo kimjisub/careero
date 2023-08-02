@@ -1,0 +1,636 @@
+
+CREATE (n:Skill {id: "html", title: "HTML"})
+RETURN n;
+
+CREATE (n:Skill {id: "css", title: "css"})
+RETURN n;
+
+CREATE (n:Skill {id: "javascript", title: "javascript"})
+RETURN n;
+
+CREATE (n:Skill {id: "typescript", title: "typescript"})
+RETURN n;
+
+CREATE (n:Skill {id: "react", title: "react"})
+RETURN n;
+
+CREATE (n:Skill {id: "vue", title: "vue"})
+RETURN n;
+
+CREATE (n:Skill {id: "redux", title: "redux"})
+RETURN n;
+
+CREATE (n:Skill {id: "python", title: "python"})
+RETURN n;
+
+CREATE (n:Skill {id: "numpy", title: "Numpy"})
+RETURN n;
+
+CREATE (n:Skill {id: "matplotlib", title: "Matplotlib"})
+RETURN n;
+
+CREATE (n:Skill {id: "Pandas", title: "Pandas"})
+RETURN n;
+
+CREATE (n:Skill {id: "SciPy", title: "SciPy"})
+RETURN n;
+
+CREATE (n:Skill {id: "ScikitLearn", title: "ScikitLearn"})
+RETURN n;
+
+CREATE (n:Skill {id: "TensorFlow", title: "TensorFlow"})
+RETURN n;
+
+CREATE (n:Skill {id: "PyTorch", title: "PyTorch"})
+RETURN n;
+
+CREATE (n:Skill {id: "Django", title: "Django"})
+RETURN n;
+
+CREATE (n:Skill {id: "Flask", title: "Flask"})
+RETURN n;
+
+CREATE (n:Skill {id: "Tkinter", title: "Tkinter"})
+RETURN n;
+
+CREATE (n:Skill {id: "PyQt", title: "PyQt"})
+RETURN n;
+
+CREATE (n:Skill {id: "Kivy", title: "Kivy"})
+RETURN n;
+
+CREATE (n:Grade {id: "freshMan", title: "1학년"})
+RETURN n;
+
+CREATE (n:Class {id: "computerThinking", title: "컴퓨팅사고"})
+RETURN n;
+
+CREATE (n:Class {id: "computerProgramming", title: "컴퓨터프로그래밍"})
+RETURN n;
+
+CREATE (n:Class {id: "computerProgrammingAndPractice", title: "컴퓨터프로그래밍실습"})
+RETURN n;
+
+CREATE (n:Skill {id: "C", title: "C"})
+RETURN n;
+
+CREATE (n:Skill {id: "GTK", title: "GTK"})
+RETURN n;
+
+CREATE (n:Skill {id: "OpenSSL", title: "OpenSSL"})
+RETURN n;
+
+CREATE (n:Skill {id: "APR", title: "APR"})
+RETURN n;
+
+CREATE (n:Skill {id: "Cpp", title: "Cpp"})
+RETURN n;
+
+CREATE (n:Skill {id: "Qt", title: "Qt"})
+RETURN n;
+
+CREATE (n:Skill {id: "Boost", title: "Boost"})
+RETURN n;
+
+CREATE (n:Skill {id: "Java", title: "Java"})
+RETURN n;
+
+CREATE (n:Skill {id: "Kotlin", title: "Kotlin"})
+RETURN n;
+
+CREATE (n:Skill {id: "Android", title: "Android"})
+RETURN n;
+
+CREATE (n:Skill {id: "Swift", title: "Swift"})
+RETURN n;
+
+CREATE (n:Skill {id: "ios", title: "ios"})
+RETURN n;
+
+CREATE (n:Skill {id: "JavaFX", title: "JavaFX"})
+RETURN n;
+
+CREATE (n:Skill {id: "JUnit", title: "JUnit"})
+RETURN n;
+
+CREATE (n:Skill {id: "Spring", title: "Spring"})
+RETURN n;
+
+CREATE (n:Skill {id: "JSP", title: "JSP"})
+RETURN n;
+
+CREATE (n:Skill {id: "Hibernate", title: "Hibernate"})
+RETURN n;
+
+CREATE (n:Skill {id: "JPA", title: "JPA"})
+RETURN n;
+
+CREATE (n:Grade {id: "sophomore", title: "2학년"})
+RETURN n;
+
+CREATE (n:Class {id: "WebProgramming", title: "웹 프로그래밍"})
+RETURN n;
+
+CREATE (n:Class {id: "probabilityStatistics", title: "확률과 통계"})
+RETURN n;
+
+CREATE (n:Class {id: "ProgrammingLanguage", title: "프로그래밍어론"})
+RETURN n;
+
+CREATE (n:Class {id: "openSource", title: "오픈소스소프트웨어"})
+RETURN n;
+
+CREATE (n:Class {id: "dataStructure", title: "자료구조"})
+RETURN n;
+
+CREATE (n:Class {id: "algorithm", title: "알고리즘"})
+RETURN n;
+
+CREATE (n:Class {id: "OOP", title: "객체지향프로그래밍"})
+RETURN n;
+
+CREATE (n:Grade {id: "junior", title: "3학년"})
+RETURN n;
+
+CREATE (n:Class {id: "computerArchitecture", title: "컴퓨터구조"})
+RETURN n;
+
+CREATE (n:Class {id: "systemProgramming", title: "시스템프로그래밍"})
+RETURN n;
+
+CREATE (n:Class {id: "DesignPattern", title: "디자인패턴"})
+RETURN n;
+
+CREATE (n:Class {id: "dataMining", title: "데이터마이닝"})
+RETURN n;
+
+CREATE (n:Class {id: "dataTransfer", title: "데이터통신"})
+RETURN n;
+
+CREATE (n:Class {id: "machineLearning", title: "머신러닝"})
+RETURN n;
+
+CREATE (n:Class {id: "NLP", title: "자연어처리"})
+RETURN n;
+
+CREATE (n:Class {id: "compiler", title: "컴파일러"})
+RETURN n;
+
+CREATE (n:Class {id: "operatingSystem", title: "운영체제"})
+RETURN n;
+
+CREATE (n:Class {id: "computerNetwork", title: "컴퓨터네트워크"})
+RETURN n;
+
+CREATE (n:Class {id: "dataBase", title: "데이터베이스"})
+RETURN n;
+
+CREATE (n:Grade {id: "senior", title: "4학년"})
+RETURN n;
+
+CREATE (n:Class {id: "deepLearning", title: "딥러닝"})
+RETURN n;
+
+CREATE (n:Class {id: "computerVision", title: "컴퓨터비전"})
+RETURN n;
+
+CREATE (n:Class {id: "dataBaseDesign", title: "데이터베이스설계"})
+RETURN n;
+
+CREATE (n:Class {id: "gameProgramming", title: "게임프로그래밍"})
+RETURN n;
+
+CREATE (n:Skill {id: "assembly", title: "어셈블리어"})
+RETURN n;
+
+CREATE (n:Skill {id: "mysql", title: "mysql"})
+RETURN n;
+
+CREATE (n:Skill {id: "unity", title: "unity"})
+RETURN n;
+
+CREATE (n:Skill {id: "cs", title: "c#"})
+RETURN n;
+
+CREATE (n:Skill {id: "git", title: "git"})
+RETURN n;
+
+CREATE (n:Competition {id: "beakJoon", title: "백준"})
+RETURN n;
+
+CREATE (n:Competition {id: "codeForce", title: "코드포스"})
+RETURN n;
+
+CREATE (n:Competition {id: "programmers", title: "프로그래머스"})
+RETURN n;
+
+CREATE (n:Competition {id: "codeTree", title: "코드트리"})
+RETURN n;
+
+CREATE (n:Competition {id: "codeUp", title: "코드업"})
+RETURN n;
+
+CREATE (n:Competition {id: "Modoo_developer_fifth", title: "[모두의연구소] 개발자 취업/이직 : 커리어랩 5기 모집"})
+RETURN n;
+
+CREATE (n:Competition {id: "Seoul_IT_Innovationsquare", title: "[서울 ICT이노베이션스퀘어] AI 서비스 완성! AI+웹 개발 취업캠프 (프론트엔드&백엔드) (~7.4 모집 마감)"})
+RETURN n;
+
+CREATE (n:Competition {id: "OpenSW_developer_competition", title: "제17회 공개SW 개발자대회 (~07.20)"})
+RETURN n;
+
+CREATE (n:Competition {id: "JAVA_backend_boot_camp", title: "[청년취업사관학교] 실무 연계 프로젝트 진행〰️JAVA 백엔드 취업 부트캠프"})
+RETURN n;
+
+CREATE (n:Competition {id: "Naver_Boost_Camp", title: "네이버부스트캠프 웹,모바일 2023 8기 모집"})
+RETURN n;
+
+CREATE (n:Competition {id: "Naver_Boost_Camp_Ai", title: "네이버부스트캠프 AI Tech"})
+RETURN n;
+
+CREATE (n:Competition {id: "ROS_Education_AI", title: "ROS와 딥러닝을 활용한 AI로봇 자율주행 개발자 과정"})
+RETURN n;
+
+CREATE (n:Competition {id: "DevOps_Developer_Education", title: "[국비지원 과정] Node.js 기반 DevOps 개발자 양성과정 참가자 모집"})
+RETURN n;
+
+CREATE (n:Competition {id: "MetaVerse_developer_competition", title: "K-디지털 챌린지 : 2023년 메타버스 개발자 경진대회"})
+RETURN n;
+
+CREATE (n:Job {id: "iOS_developer", title: "iOS개발자"})
+RETURN n;
+
+CREATE (n:Job {id: "Android_developer", title: "Android개발자"})
+RETURN n;
+
+CREATE (n: job {id: "Web_developer_front", title: "웹프론트엔드개발자"})
+RETURN n;
+
+CREATE (n:Job {id: "Web_developer_back", title: "웹백엔드개발자"})
+RETURN n;
+
+CREATE (n:Job {id: "Data_Scientist", title: "데이터과학자"})
+RETURN n;
+
+CREATE (n:Job {id: "Game_developer", title: "게임 개발자"})
+RETURN n;
+
+MATCH (a {id: "html"}), (b {id: "javascript"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "html"}), (b {id: "typescript"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "html"}), (b {id: "Web_developer_front"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "css"}), (b {id: "javascript"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "css"}), (b {id: "typescript"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "css"}), (b {id: "Web_developer_front"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "javascript"}), (b {id: "react"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "javascript"}), (b {id: "vue"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "javascript"}), (b {id: "redux"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "javascript"}), (b {id: "Web_developer_front"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "javascript"}), (b {id: "Game_developer"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "typescript"}), (b {id: "react"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "typescript"}), (b {id: "vue"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "typescript"}), (b {id: "redux"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "react"}), (b {id: "redux"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "python"}), (b {id: "numpy"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "matplotlib"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "Pandas"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "SciPy"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "ScikitLearn"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "TensorFlow"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "PyTorch"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "Django"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "Flask"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "Tkinter"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "PyQt"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "Kivy"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "Web_developer_back"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "Data_Scientist"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "python"}), (b {id: "Game_developer"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "freshMan"}), (b {id: "sophomore"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "computerProgramming"}), (b {id: "computerProgrammingAndPractice"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "computerProgrammingAndPractice"}), (b {id: "dataStructure"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "C"}), (b {id: "Cpp"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "C"}), (b {id: "GTK"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "C"}), (b {id: "OpenSSL"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "C"}), (b {id: "APR"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "C"}), (b {id: "ios"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "Cpp"}), (b {id: "Qt"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Cpp"}), (b {id: "Boost"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Cpp"}), (b {id: "Game_developer"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "Java"}), (b {id: "JavaFX"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Java"}), (b {id: "JUnit"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Java"}), (b {id: "Spring"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Java"}), (b {id: "JSP"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Java"}), (b {id: "Hibernate"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Java"}), (b {id: "JPA"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Java"}), (b {id: "Android_developer"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Java"}), (b {id: "Web_developer_back"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Java"}), (b {id: "Data_Scientist"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Java"}), (b {id: "Game_developer"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "Kotlin"}), (b {id: "Android"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "Kotlin"}), (b {id: "Android_developer"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "Swift"}), (b {id: "ios"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "ios"}), (b {id: "iOS_developer"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "sophomore"}), (b {id: "junior"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "probabilityStatistics"}), (b {id: "machineLearning"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "ProgrammingLanguage"}), (b {id: "compiler"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "dataStructure"}), (b {id: "algorithm"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "algorithm"}), (b {id: "beakJoon"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "algorithm"}), (b {id: "programmers"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "algorithm"}), (b {id: "codeForce"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "algorithm"}), (b {id: "codeTree"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "algorithm"}), (b {id: "codeUp"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "OOP"}), (b {id: "DesignPattern"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "OOP"}), (b {id: "ProgrammingLanguage"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "junior"}), (b {id: "senior"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "computerArchitecture"}), (b {id: "operatingSystem"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "systemProgramming"}), (b {id: "operatingSystem"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "dataMining"}), (b {id: "dataBaseDesign"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "dataTransfer"}), (b {id: "computerNetwork"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "machineLearning"}), (b {id: "deepLearning"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "machineLearning"}), (b {id: "computerVision"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "machineLearning"}), (b {id: "NLP"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "dataBase"}), (b {id: "dataBaseDesign"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "mysql"}), (b {id: "Web_developer_back"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+
+MATCH (a {id: "mysql"}), (b {id: "Data_Scientist"})
+CREATE (a)-[r:next]->(b)
+RETURN r;
+
+MATCH (a {id: "cs"}), (b {id: "Game_developer"})
+CREATE (a)-[r:next]->(b)
+RETURN r;

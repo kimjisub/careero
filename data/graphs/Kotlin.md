@@ -1,3 +1,3 @@
 
-next: [[Andorid]], [[Android_developer]]
+next: [[Android]], [[Android_developer]]
 related: [[Java]]

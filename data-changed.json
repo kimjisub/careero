@@ -553,17 +553,17 @@
   "content": "Kotlin은 JVM에서 동작하는 프로그래밍 언어입니다. Kotlin은 Java와의 상호 운용성을 제공하며, Android 애플리케이션 개발에 사용됩니다.",
   "prev": [],
   "next": [
-   "Android",
+   "Andorid",
    "Android_developer"
   ],
   "related": [
    "Java"
   ]
  },
- "Android": {
-  "id": "Android",
+ "Andorid": {
+  "id": "Andorid",
   "type": "skill",
-  "title": "Android",
+  "title": "Andorid",
   "content": "Android는 리눅스 기반의 모바일 운영체제입니다. Android는 Java와 Kotlin을 통해 애플리케이션을 개발할 수 있습니다.",
   "prev": [
    "Kotlin"

@@ -65,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "593d5288dd521ceb",
@@ -139,5 +140,7 @@
     }
   },
   "active": "433682492dce66c5",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "Android.md"
+  ]
 }
